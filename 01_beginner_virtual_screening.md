@@ -4,7 +4,7 @@ ________________________________________
 🛠 The “Beginner Version” Pipeline Logic
 (The Core Architecture Behind a $170k USD / NT$5.4M Workflow)
 The main goal of this pipeline is actually very simple:
-To screen tens of thousands of FDA drugs without manually clicking a GUI ten thousand times.
+To screen large compound libraries without manually clicking through a GUI thousands of times.
 ________________________________________
 🧪 The Two Major Camps in Virtual Screening
 Virtual screening roughly splits into two worlds:
@@ -66,8 +66,8 @@ This can be done using:
 •	prepare_receptor
 running in the Linux background.
 ________________________________________
-Step 2｜FDA Drug Sources
-The following three databases were successfully used to manually download FDA-approved compounds.
+Step 2｜Compound Databases
+The following three databases were the primary compound sources used in this workflow.
 ________________________________________
 A. ZINC20 / ZINC22 (Recommended)
 Advantages
