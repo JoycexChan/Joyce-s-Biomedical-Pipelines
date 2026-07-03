@@ -1,4 +1,5 @@
 A $170k (NT$5.4M) Virtual Screening Pipeline (The Upgraded Pipeline)
+________________________________________
 
 My Basic View of LLMs
 LLMs (Large Language Models) are AI systems based on deep learning.
@@ -12,6 +13,8 @@ If a problem does not yet have a known correct answer, but you possess the “cr
 The functions described below have already appeared in different software ecosystems across related fields, so I consider them examples of “answers that already exist.”
 
 As for electrostatic-charge-related optimization, I have not fully tested that yet. That problem still does not have a definitive correct answer. Just because an AI thinks my direction is reasonable does not mean it is guaranteed to be correct. I only consider it worthy of experimentation.
+
+________________________________________
 
 The Two Major Camps in Drug Screening
 Drug screening roughly splits into two worlds:
@@ -29,6 +32,8 @@ So my approach to batch drug screening is fundamentally bioinformatics-oriented.
 For anyone who can code, this is not actually difficult. Once you understand the data formats, the entire thing becomes surprisingly straightforward.
 
 You can even ask Discovery Studio vendors for trial access pretending you are interested in purchasing the software (XDD). Their GUI features are often available for testing. Some labs also rent DS environments by time slot. Go play with it.
+
+________________________________________
 
 Overall Workflow Overview (Rabbit Way)
 Step 1｜Protein Processing: From PDB to a Computable Model
@@ -65,6 +70,8 @@ prepare_receptor
 from the ADFRsuite package.
 Run it in the Linux background for bulk processing.
 
+________________________________________
+
 Step 2｜Drug Sources: Where Thousands of  Small Molecules Come From
 When updating databases, simply compare existing records and only download new compounds.
 
@@ -99,6 +106,8 @@ Its metadata is extremely rich, especially:
 
 drug-target relationships
 
+________________________________________
+
 Step 3｜Small-Molecule Cleanup and Standardization
 Downloaded SDF files often contain:
 
@@ -116,10 +125,14 @@ remove salts and solvents
 normalize valence structures
 ensure chemically valid bonds
 
+________________________________________
+
 Step 4｜Energy Minimization (Bulk Mode)
 This can be performed directly from the command line using:
 
 Open Babel
+
+________________________________________
 
 Step 5｜Format Conversion and Docking Preparation
 AutoDock Vina does not accept:
@@ -145,6 +158,8 @@ You then need:
 prepare_receptor
 from the AutoDock toolkit to convert it into .pdbqt.
 
+________________________________________
+
 Step 6｜Grid Box: The Most Common Failure Point
 You must tell Vina where the binding pocket is.
 
@@ -158,12 +173,16 @@ ligand coordinates
 sphere size
 That feature is free.
 
+________________________________________
+
 Step 7｜Batch Docking Script (AutoDock Vina)
 Write a Python script that:
 
 traverses all compounds in a folder
 docks them one by one automatically
 using AutoDock Vina.
+
+________________________________________
 
 Step 8｜Result Ranking and Preliminary Filtering
 Remember:
@@ -220,10 +239,14 @@ Adjust the number based on your computer specs.
 
 Too many structures may cause lag.
 
+________________________________________
+
 Step 9｜PyMOL Visualization and “Information Hand-Off to Synthetic Chemists”
 You can always skim a few 3D-QSAR papers, memorize some terminology, and sound highly professional.
 
 But the core logic is roughly this:
+
+________________________________________
 
 Steric Field Analysis (Steric Map / Van der Waals Clashes)
 Logic
@@ -231,6 +254,9 @@ Observe distances between:
 
 ligand atoms
 protein residues
+
+________________________________________
+
 Analysis
 Steric Clash
 If atomic distance is smaller than the sum of van der Waals radii:
@@ -253,6 +279,8 @@ Add hydrophobic groups such as:
 phenyl rings
 alkyl chains
 to increase hydrophobic interactions.
+
+________________________________________
 
 Electrostatic Field Analysis (Electrostatic / Hydrogen Bond Map)
 Logic
@@ -281,6 +309,9 @@ Suggestion
 Add positively charged or electron-donating groups:
 
 -NH3
+
+________________________________________
+
 Extension｜If the Synthetic Chemist Wants to Modify Functional Groups
 At that point, the structure can be handed over to a synthetic chemist.
 
@@ -296,6 +327,9 @@ Force-insert fragment atoms
 Rewrite bond topology tables
 Run Open Babel energy minimization
 Let the force field relax the structure back into a valid energy surface
+
+________________________________________
+
 Finally:
 
 feed the modified structures back into the batch docking pipeline again.
