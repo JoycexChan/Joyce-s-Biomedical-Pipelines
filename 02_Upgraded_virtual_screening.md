@@ -146,111 +146,156 @@ prepare_receptor
 from the AutoDock toolkit to convert it into .pdbqt.
 
 Step 6｜Grid Box: The Most Common Failure Point
-This is where docking most often breaks.
 You must tell Vina where the binding pocket is.
+
 If the original protein already contains a ligand:
-•	compute the ligand centroid using Python
+
+compute the ligand centroid using Python
 Alternatively:
-•	use Discovery Studio to directly read:
-•	ligand coordinates
-•	sphere size
+
+use Discovery Studio to directly read:
+ligand coordinates
+sphere size
 That feature is free.
 
 Step 7｜Batch Docking Script (AutoDock Vina)
 Write a Python script that:
-•	traverses all compounds in a folder
-•	docks them one by one automatically
+
+traverses all compounds in a folder
+docks them one by one automatically
 using AutoDock Vina.
 
 Step 8｜Result Ranking and Preliminary Filtering
 Remember:
+
 What we actually need is:
-•	drug name
-•	docking score
-•	model number
+
+drug name
+docking score
+model number
 Script Logic
+
 Parse:
+
 MODEL
+
 REMARK
+
 fields from the output files.
+
 Finally generate a:
+
 CSV report
+
 containing:
-•	drug_name
-•	score
-•	model
+
+drug_name
+score
+model
 Recommended Additional Column
+
 Add:
+
 database_url + drug_name
+
 so you can jump directly back to the original database entry.
+
 I didn’t think of this back then:
+
 I only added it later in Excel. (laughs)
+
 Combine PDB Structures
+
 Using the ranked CSV:
+
 Automatically extract specific models and merge them into:
+
 combine.pdb
+
 At this point:
+
 Your ligands will load together according to ranking.
+
 Adjust the number based on your computer specs.
+
 Too many structures may cause lag.
 
 Step 9｜PyMOL Visualization and “Information Hand-Off to Synthetic Chemists”
 You can always skim a few 3D-QSAR papers, memorize some terminology, and sound highly professional.
+
 But the core logic is roughly this:
+
 Steric Field Analysis (Steric Map / Van der Waals Clashes)
 Logic
 Observe distances between:
-•	ligand atoms
-•	protein residues
+
+ligand atoms
+protein residues
 Analysis
 Steric Clash
 If atomic distance is smaller than the sum of van der Waals radii:
-•	usually shown as red collisions
+
+usually shown as red collisions
 then the region is overcrowded.
+
 Suggestion
 Reduce side-chain volume.
+
 Example:
+
 -CH3 → -H
 Empty Space
 If the pocket still contains large unoccupied regions:
+
 Suggestion
 Add hydrophobic groups such as:
-•	phenyl rings
-•	alkyl chains
+
+phenyl rings
+alkyl chains
 to increase hydrophobic interactions.
+
 Electrostatic Field Analysis (Electrostatic / Hydrogen Bond Map)
 Logic
 Use:
-•	PyMOL Vacuum Electrostatics
-•	APBS plugin
+
+PyMOL Vacuum Electrostatics
+APBS plugin
 Analysis
 Positive Region (Blue)
 The protein region lacks electrons.
+
 Suggestion
 Add electronegative groups:
-•	-F
-•	-OH
-•	=O
+
+-F
+-OH
+=O
 to form:
-•	hydrogen bonds
-•	electrostatic attractions
+
+hydrogen bonds
+electrostatic attractions
 Negative Region (Red)
 The protein region is electron-rich.
+
 Suggestion
 Add positively charged or electron-donating groups:
-•	-NH3
+
+-NH3
 Extension｜If the Synthetic Chemist Wants to Modify Functional Groups
 At that point, the structure can be handed over to a synthetic chemist.
-If they want to modify substituents:
-•	simply build a fragment library
-•	attach fragments to desired ligand positions
-The process is roughly:
-1.	Specify atom indices
-2.	Compute vector-coordinate offsets
-3.	Force-insert fragment atoms
-4.	Rewrite bond topology tables
-5.	Run Open Babel energy minimization
-6.	Let the force field relax the structure back into a valid energy surface
-Finally:
-•	feed the modified structures back into the batch docking pipeline again.
 
+If they want to modify substituents:
+
+simply build a fragment library
+attach fragments to desired ligand positions
+The process is roughly:
+
+Specify atom indices
+Compute vector-coordinate offsets
+Force-insert fragment atoms
+Rewrite bond topology tables
+Run Open Babel energy minimization
+Let the force field relax the structure back into a valid energy surface
+Finally:
+
+feed the modified structures back into the batch docking pipeline again.
