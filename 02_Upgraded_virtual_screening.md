@@ -98,6 +98,7 @@ Strength
 Its metadata is extremely rich, especially:
 
 drug-target relationships
+
 Step 3｜Small-Molecule Cleanup and Standardization
 Downloaded SDF files often contain:
 
@@ -114,10 +115,12 @@ remove salts and solvents
 
 normalize valence structures
 ensure chemically valid bonds
+
 Step 4｜Energy Minimization (Bulk Mode)
 This can be performed directly from the command line using:
 
 Open Babel
+
 Step 5｜Format Conversion and Docking Preparation
 AutoDock Vina does not accept:
 
@@ -152,11 +155,13 @@ Alternatively:
 •	ligand coordinates
 •	sphere size
 That feature is free.
+
 Step 7｜Batch Docking Script (AutoDock Vina)
 Write a Python script that:
 •	traverses all compounds in a folder
 •	docks them one by one automatically
 using AutoDock Vina.
+
 Step 8｜Result Ranking and Preliminary Filtering
 Remember:
 What we actually need is:
@@ -188,6 +193,7 @@ At this point:
 Your ligands will load together according to ranking.
 Adjust the number based on your computer specs.
 Too many structures may cause lag.
+
 Step 9｜PyMOL Visualization and “Information Hand-Off to Synthetic Chemists”
 You can always skim a few 3D-QSAR papers, memorize some terminology, and sound highly professional.
 But the core logic is roughly this:
