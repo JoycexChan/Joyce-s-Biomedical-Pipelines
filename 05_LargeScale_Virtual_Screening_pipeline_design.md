@@ -49,24 +49,31 @@ The charge categories are:
 *	Negative
 *	Zwitterionic (contains both positive and negative atoms)
 ________________________________________
-## Step 01–1 — Generate Shape Garage IDs Using USR
-(Ultrafast Shape Recognition)
+## Step 01–1 — Generate Shape Garage IDs Using USR (Ultrafast Shape Recognition)
+
 The basic idea is:
 Center of mass
 → Select representative points
 → Measure distance distributions
 → Convert them into a fixed-length vector
+
 Using RDKit:
 rdMolDescriptors.GetUSR()
 This generates a shape descriptor.
+
 Next, perform clustering and assign a Cluster_ID.
+
 There are many clustering methods available.
+
 Pick whichever one makes you happy.
+
 The workflow is:
 USR shape vector
 → Clustering
 → Cluster_ID
+
 Congratulations.
+
 You now have a shape garage number.
 (You can call them BMW, Ferrari, or whatever makes your heart happy.)
 ________________________________________
