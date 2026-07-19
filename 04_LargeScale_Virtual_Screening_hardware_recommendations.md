@@ -22,6 +22,8 @@ Of course, docking workloads are not entirely GPU-bound, so actual performance g
 
 Back when I was running a library of 10,000 FDA-approved drugs at exhaustiveness 16, the job took roughly three days.
 ________________________________________
+### 10 million compounds at exhaustiveness 16, the job took roughly one month to two and a half months.
+
 For ultra-large virtual screening projects, you can usually lower the exhaustiveness setting a bit. Screening ten million compounds doesn’t require the same level of precision as a final lead optimization stage.
 Using the acceleration numbers above:
 10,000 compounds on an RTX 3090 would likely take approximately 1.42–3.32 hours.
