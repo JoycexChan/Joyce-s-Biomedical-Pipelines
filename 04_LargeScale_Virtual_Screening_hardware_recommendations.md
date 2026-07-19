@@ -36,26 +36,47 @@ For ultra-large virtual screening projects, you can usually lower the exhaustive
 Approximately:
 740–1740 hours or 30.8–72.5 days
   
-* In other words:
+In other words:
 One month to two and a half months.
 
 That’s already within a range many academic labs can tolerate.
 ________________________________________
+## A gaming workstation(RTX 5090) usable for around five years
 A gaming workstation equipped with an RTX 5090 costs roughly NT$200,000 and should remain usable for around five years.
+
 If it breaks during warranty, send it back for repair.
-After five years? Cross your fingers and pray to the hardware gods. On the bright side, academia usually foots the electricity and air conditioning bills, so you can run that 5090 at full throttle without burning a hole in your own pocket.
-I also recommend setting up a system recovery image. If the problem is purely software-related, restoring the system is much faster than waiting two weeks for IT support.
+
+After five years? 
+
+Cross your fingers and pray to the hardware gods. On the bright side, academia usually foots the electricity and air conditioning bills, so you can run that 5090 at full throttle without burning a hole in your own pocket.
+
+I also recommend setting up a system recovery image. 
+
+If the problem is purely software-related, restoring the system is much faster than waiting two weeks for IT support.
 ________________________________________
+## pipeline design (the runtime should be reduced to a few weeks)
+
 However, our actual goal is preventing the PI from constantly asking:
 “Is it done yet?”
+
 Ideally, the runtime should be reduced to a few weeks rather than a few months.
+
 That’s where Part 2 comes in.
+
 The compound classification strategy described in Part 2 should significantly reduce the screening time.
 ________________________________________
+## hundred-million-compound libraries (hardware recommendations)
+
 If you want to move into hundred-million-compound libraries, you’ll probably need a NAS and multiple RTX 5090 systems running in parallel.
+
 Network bandwidth starts to matter at that point.
+
 If expansion is part of your future plans, upgrade the NAS first.
+
 Also pay attention to the network cards in your workstations.
+
 Otherwise, you might discover that your GPUs are fast but your data transfer isn’t.
+
 A setup like this can easily cost over $30,000.
+
 Not exactly cheap.
