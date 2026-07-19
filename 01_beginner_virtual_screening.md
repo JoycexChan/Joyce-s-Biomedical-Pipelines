@@ -1,5 +1,5 @@
 # A $170k (NT$5.4M) Virtual Screening Pipeline 
-(Currently supporting two ongoing NSTC-funded research projects.)
+(Used in two NSTC-funded research projects.)
 ________________________________________
 ## 🛠 The “Beginner Version” Pipeline Logic
 (The Core Architecture Behind a $170k USD / NT$5.4M Workflow)
