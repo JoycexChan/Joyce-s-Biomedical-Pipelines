@@ -205,7 +205,7 @@ Time for analysis.
 
 (Of course, if there aren’t many cars, you can still dock everything.)
 ________________________________________
-## Analysis
+## Analysis (You really don’t need to screen all ten million compounds)
 ### A. Volume Analysis
 
 At some point you’ll discover the largest compound size the pocket can realistically accommodate.
@@ -217,8 +217,6 @@ Every compound larger than that volume can be eliminated immediately.
 No docking required.
 
 ### B. Score Ranking
-
-Hmm… let me think.
 
 #### B-1
 
@@ -253,44 +251,70 @@ pull out the negatively charged cars.
 
 And don’t forget:
 Eliminate everything larger than the maximum volume identified during Volume Analysis.
+
 Dock.
-________________________________________
+
 Analyze.
+
 Go home.
+
 You really don’t need to screen all ten million compounds.
-What Are the Neutral Probe Cars Actually For?
+________________________________________
+## What Are the Neutral Probe Cars Actually For?
+
 The purpose of the neutral-colored probe cars is:
-1.	To estimate the pocket’s shape preference
-2.	To estimate the pocket’s maximum volume
+*	To estimate the pocket’s shape preference
+*	To estimate the pocket’s maximum volume
+
 Once you’ve identified strong van der Waals packing preferences, you can then introduce charged compounds to capture important residues.
 (You should already know what kind of electrical outlets exist inside your parking lot.)
+
 That’s how you obtain high-affinity docking candidates.
+
 At this point you can begin analyzing the data.
 ________________________________________
+## A large fraction of the library can be removed before docking even begins.
+
 If you’re still worried, you can always keep the full ten-million-compound screening running in the background while you analyze.
+
 But remember:
+
 You already know:
-•	The maximum acceptable molecular volume
-•	The preferred charge characteristics of the pocket
+*	The maximum acceptable molecular volume
+*	The preferred charge characteristics of the pocket
+
 Therefore:
-•	Compounds larger than the volume limit don’t need to be screened.
-•	Compounds with incompatible charge states don’t need to be screened.
+*	Compounds larger than the volume limit don’t need to be screened.
+*	Compounds with incompatible charge states don’t need to be screened.
+
 A large fraction of the library can be removed before docking even begins.
 ________________________________________
+## Because docking isn’t the end of the story, It has to remain bound long enough for inhibition or activation to occur.
+
 But Honestly?
+
 I genuinely don’t think you need to screen everything.
+
 I’ve spent 11.5 years working in molecular dynamics.
+
 You’re asking me to believe that a pocket has enough superhuman gripping power to hold onto the head of a ligand while the rest of the molecule hangs outside waving around in the wind —
 and somehow the ligand still doesn’t leave?
+
 At that point, I start suspecting the protein might be an alien life form.
+
 I’d be very interested in meeting whatever organism owns that protein.
+
 Because docking isn’t the end of the story.
+
 The ligand still has to do its job.
+
 It has to remain bound long enough for inhibition or activation to occur.
+
 So you’re asking me to believe that:
-•	The dangling tail never gets pulled away by something else.
-•	The flexible tail never wiggles the ligand out of the pocket.
-•	The entire complex stays stable despite half the molecule floating around outside.
-=_= ????????
+*	The dangling tail never gets pulled away by something else.
+*	The flexible tail never wiggles the ligand out of the pocket.
+*	The entire complex stays stable despite half the molecule floating around outside.
+  
 That’s not a protein.
+
 That’s a Saiyan protein.
