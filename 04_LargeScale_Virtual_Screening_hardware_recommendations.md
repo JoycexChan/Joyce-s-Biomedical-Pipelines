@@ -4,11 +4,13 @@ ________________________________________
 * The first part covers hardware recommendations. When my former PI moved to a new university, I rebuilt the laboratory from scratch and independently handled the entire planning and procurement process. I’ve managed servers, workstations, RTX 3090 gaming PCs, Linux systems, and Windows systems.
 * The second part covers the actual pipeline design: how to classify compounds before large-scale virtual screening in order to reduce computational time.
 ________________________________________
-Hardware Recommendations
+## Hardware Recommendations
 Let’s start with AutoDock.
-According to this paper:
+
+* According to this paper:
 Large benchmark tests show that Vina-GPU reaches an average of 21.66× and a maximum of 50.80× speed-up on NVIDIA GeForce RTX 3090 against the original AutoDock Vina on a 20-threaded CPU while ensuring their comparable docking accuracy.
 https://pmc.ncbi.nlm.nih.gov/articles/PMC9103882/
+
 We can see that using an RTX 3090 provides approximately 21.66×–50.80× acceleration compared with CPU docking.
 The RTX 5090 (memory bandwidth: 1792 GB/s) has approximately 1.91× the memory bandwidth of the RTX 3090 (936 GB/s).
 Of course, docking workloads are not entirely GPU-bound, so actual performance gains will not scale perfectly. There will always be some overhead.
