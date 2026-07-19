@@ -78,117 +78,181 @@ You now have a shape garage number.
 (You can call them BMW, Ferrari, or whatever makes your heart happy.)
 ________________________________________
 ## Step 01–2 — Calculate Molecular Volume
+
 Use RDKit:
 ComputeMolVolume()
 or
 MolVolume
+
 The required 3D conformers should already exist from the energy-minimization step.
+
 Output:
-•	Compound_ID
-•	Volume
+*	Compound_ID
+*	Volume
+
 Now every car knows whether it’s a compact car or a giant truck.
 ________________________________________
 ## Step 01–3 — Charge-State Classification
+
 For this example, I will use physiological pH 7.4.
+
 If your experiment uses a different pH, adjust accordingly.
+
 Use:
 Dimorphite-DL
 to predict protonation states.
+
 Examples:
 CC(=O)[O-]
 C[NH3+]
 [NH3+]CC(=O)[O-]
+
 You can write a simple Python script to classify compounds.
 (I only know Python, so that’s what I’d do.)
+
 Rules:
-•	Positive charge only → Positive
-•	Negative charge only → Negative
-•	Both positive and negative charges → Zwitterionic
-•	No formal charges → Neutral
+*	Positive charge only → Positive
+*	Negative charge only → Negative
+*	Both positive and negative charges → Zwitterionic
+*	No formal charges → Neutral
+
 Classification complete.
+
 At this point, every compound has:
-•	Shape garage ID
-•	Volume ranking
-•	Charge label
+*	Shape garage ID
+*	Volume ranking
+*	Charge label
+
 In other words:
-•	Garage number
-•	Vehicle size
-•	Vehicle color
+*	Garage number
+*	Vehicle size
+*	Vehicle color
+
 Perfect.
+
 The parking lot management system is now operational.
 ________________________________________
 ## Step 02 — Two Possible Starting Points
+
 There are two ways to begin.
-Route A — You Already Have a Lead
+
+### Route A — You Already Have a Lead
+
 Maybe you already know what kind of compounds you’re interested in.
+
 Or maybe you’ve run an FDA drug screening campaign and found something that looks promising.
+
 In that case:
 Throw that compound into USR (Ultrafast Shape Recognition) and find its shape garage ID.
 Maybe it’s a BMW.
+
 Next:
 Check whether your target pocket contains any important positively or negatively charged residues.
 Use that information to choose the appropriate charge category (different paint colors).
+
 For example:
- 
 If the pocket contains an important positively charged residue,
 pull out the positively charged BMW cars.
+
 Then:
 Start crashing cars into the parking lot in order of molecular volume.
+
 Check every morning to see how far you’ve gotten.
+
 Eventually you’ll reach compounds so large that they couldn’t fit into the pocket even if they curled themselves into a ball.
+
 Congratulations.
+
 Work finished.
+
 Time for analysis.
 (Of course, if there aren’t many cars in that garage, you can always dock all of them.)
-Route B — You Only Have a Pocket
+
+### Route B — You Only Have a Pocket
+
 You know absolutely nothing.
+
 You have a pocket.
+
 You want to dock everything.
+
 In that case:
 Pull out all the neutral-colored cars from every shape garage.
+
 If one garage doesn’t contain any neutral-colored cars, maybe it’s some weird mutant branch of a miracle drug family and you can design a scaffold for it later.
+
 Personally, I’m too lazy to deal with that, so I’d just include everything.
+
 You can also put the garage ID directly into the compound name if that helps with tracking.
+
 Honestly though, we already built a catalog, so whether you do this or not doesn’t really matter.
+
 Deploy the Probe Cars
+
 Launch the probe cars.
+
 This stage should be run completely.
+
 Process them in order of molecular volume.
+
 Check every morning to see how far you’ve gotten.
+
 Eventually you’ll reach compounds so large that they couldn’t fit into the pocket even if they curled themselves into a ball.
+
 Congratulations.
+
 Work finished.
+
 Time for analysis.
+
 (Of course, if there aren’t many cars, you can still dock everything.)
 ________________________________________
-Analysis
-A. Volume Analysis
+## Analysis
+### A. Volume Analysis
+
 At some point you’ll discover the largest compound size the pocket can realistically accommodate.
+
 Once you know that number, go back to your catalog.
+
 Every compound larger than that volume can be eliminated immediately.
+
 No docking required.
-B. Score Ranking
+
+### B. Score Ranking
+
 Hmm… let me think.
-B-1
+
+#### B-1
+
 Take the top 10,000 ranked compounds.
-B-2
+
+#### B-2
+
 Look at those top-ranked cars and analyze which garages appear most frequently.
+
 Now you can generate a ranking based on:
-•	High-scoring garages
-•	Frequently appearing garages
+*	High-scoring garages
+*	Frequently appearing garages
+
 Those rankings can be used as references for the next round.
+
 Now we can start docking for real.
+
 Pull out the garages that performed well.
 BMW.
 Ferrari.
 Maserati.
+
 Whatever showed up near the top.
+
 Then:
 Check whether your pocket contains important positively or negatively charged residues.
 Use that information to choose the appropriate charge category.
+
 For example:
 If an important residue is positively charged,
 pull out the negatively charged cars.
+
 And don’t forget:
 Eliminate everything larger than the maximum volume identified during Volume Analysis.
 Dock.
