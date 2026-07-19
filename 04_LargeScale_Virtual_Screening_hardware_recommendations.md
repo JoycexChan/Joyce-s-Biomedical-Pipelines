@@ -24,18 +24,20 @@ Back when I was running a library of 10,000 FDA-approved drugs at exhaustiveness
 ________________________________________
 ### 10 million compounds at exhaustiveness 16, the job took roughly one month to two and a half months.
 
-For ultra-large virtual screening projects, you can usually lower the exhaustiveness setting a bit. Screening ten million compounds doesn’t require the same level of precision as a final lead optimization stage.
+* For ultra-large virtual screening projects, you can usually lower the exhaustiveness setting a bit. Screening ten million compounds doesn’t require the same level of precision as a final lead optimization stage.
 Using the acceleration numbers above:
 10,000 compounds on an RTX 3090 would likely take approximately 1.42–3.32 hours.
-Scaling that estimate to an RTX 5090:
+
+* Scaling that estimate to an RTX 5090:
 10,000 compounds may take roughly 0.74–1.74 hours.
-What about 10 million compounds?
+
+* What about 10 million compounds?
 Approximately:
-740–1740 hours
-or
-30.8–72.5 days
-In other words:
+740–1740 hours or 30.8–72.5 days
+  
+* In other words:
 One month to two and a half months.
+
 That’s already within a range many academic labs can tolerate.
 ________________________________________
 A gaming workstation equipped with an RTX 5090 costs roughly NT$200,000 and should remain usable for around five years.
