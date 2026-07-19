@@ -1,12 +1,12 @@
-A $170k (NT$5.4M) Virtual Screening Pipeline 
+# A $170k (NT$5.4M) Virtual Screening Pipeline 
 (Currently supporting two ongoing NSTC-funded research projects.)
 ________________________________________
-🛠 The “Beginner Version” Pipeline Logic
+## 🛠 The “Beginner Version” Pipeline Logic
 (The Core Architecture Behind a $170k USD / NT$5.4M Workflow)
 The main goal of this pipeline is actually very simple:
 To screen large compound libraries without manually clicking through a GUI thousands of times.
 ________________________________________
-🧪 The Two Major Camps in Virtual Screening
+## 🧪 The Two Major Camps in Virtual Screening
 Virtual screening roughly splits into two worlds:
 Field	Characteristics
 Computational Chemistry	High precision, low efficiency
@@ -20,7 +20,7 @@ So this entire batch virtual screening workflow was essentially built from a:
 Bioinformatics-driven perspective.
 ________________________________________
 
-But honestly:
+## But honestly:
 Anyone who can code should be able to reconstruct it.
 And nowadays:
 You could probably just let AI generate most of the code for you.
@@ -31,9 +31,9 @@ Once you understand:
 •	how data flows between stages
 …it really is that simple.
 ________________________________________
-🐇 Overall Workflow Overview (Rabbit Way)
+## 🐇 Overall Workflow Overview (Rabbit Way)
 ________________________________________
-Step 1｜Protein Preparation: From PDB to a Computable Model
+### Step 1｜Protein Preparation: From PDB to a Computable Model
 Search for Discovery Studio tutorials:
 Prepare Protein
 ________________________________________
@@ -66,7 +66,7 @@ This can be done using:
 •	prepare_receptor
 running in the Linux background.
 ________________________________________
-Step 2｜Compound Databases
+### Step 2｜Compound Databases
 The following three databases were the primary compound sources used in this workflow.
 ________________________________________
 A. ZINC20 / ZINC22 (Recommended)
@@ -93,7 +93,7 @@ Including:
 •	pathways
 •	pharmacology information
 ________________________________________
-Step 3｜Ligand Cleaning and Standardization
+### Step 3｜Ligand Cleaning and Standardization
 Search for Discovery Studio tutorials:
 Prepare Ligands
 ________________________________________
@@ -132,7 +132,7 @@ ________________________________________
 After processing:
 Save as .mol2
 ________________________________________
-Step 4｜Splitting and Conversion
+### Step 4｜Splitting and Conversion
 Next, write a Python script to split the large .mol2 file into:
 One molecule per file.
 ________________________________________
@@ -154,7 +154,7 @@ Use:
 ISO-8859-1
 to avoid crashes caused by special characters.
 ________________________________________
-Step 5｜Convert to pdbqt
+### Step 5｜Convert to pdbqt
 AutoDock ultimately requires:
 .pdbqt
 So the .mol2 files must be converted again.
@@ -201,7 +201,7 @@ Later during analysis:
 •	inspect full metadata
 Very convenient.
 ________________________________________
-Step 6｜Grid Box Definition
+### Step 6｜Grid Box Definition
 Search for:
 CDOCKER
 ________________________________________
@@ -221,7 +221,7 @@ You can manipulate the sphere using:
 Ctrl + Middle Mouse Drag
 which is very intuitive for beginners.
 ________________________________________
-Step 7｜Batch Docking (AutoDock Vina)
+### Step 7｜Batch Docking (AutoDock Vina)
 Example configuration:
 receptor = receptor.pdbqt
 ligand = ligand.pdbqt
@@ -274,7 +274,7 @@ Anything significantly larger:
 Skip it entirely.
 Because it physically won’t fit into the pocket anyway.
 ________________________________________
-Step 8｜Result Analysis
+### Step 8｜Result Analysis
 Remember:
 What we actually need is:
 •	drug name
@@ -301,7 +301,7 @@ so you can jump directly back to the original database entry.
 I didn’t think of this back then:
 I only added it later in Excel. (laughs)
 ________________________________________
-Step 9｜Combine PDB Structures
+### Step 9｜Combine PDB Structures
 Using the ranked CSV:
 Automatically extract specific models and merge them into:
 combine.pdb
@@ -311,7 +311,7 @@ Your ligands will load together according to ranking.
 Adjust the number based on your computer specs.
 Too many structures may cause lag.
 ________________________________________
-Step 10｜PyMOL / Discovery Studio Visualization
+### Step 10｜PyMOL / Discovery Studio Visualization
 This is where we enter:
 “How to sound like a medicinal chemist.” (laughs)
 ________________________________________
@@ -345,7 +345,7 @@ Consider adding:
 to enhance:
 hydrophobic interactions
 ________________________________________
-Electrostatic Field Analysis
+### Electrostatic Field Analysis
 ________________________________________
 Visualizing Surface Potential
 In the Properties panel:
@@ -377,7 +377,7 @@ Add:
 •	electron-donating groups
 to achieve charge complementarity.
 ________________________________________
-🧠 Final Thoughts
+## 🧠 Final Thoughts
 At its core, this entire workflow is not:
 “Some magical drug discovery technique.”
 Instead, it is:
