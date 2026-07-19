@@ -10,8 +10,8 @@ Biomedical workflow documentation, automation pipelines, and reproducible comput
 ### Virtual Screening
 * [A $170k (NT$5.4M) Virtual Screening Pipeline (Used in two NSTC-funded research projects.)](./01_beginner_virtual_screening.md)
 * [A $170k (NT$5.4M) Virtual Screening Pipeline (The Upgraded Pipeline)](./02_Upgraded_virtual_screening.md)
-* [Large-scale Virtual Screening (Hardware Recommendations)] (./04_LargeScale_Virtual_Screening_hardware_recommendations.md)
-* [Large-scale Virtual Screening (Chemical Space Navigation Pipeline v1.0)] (./05_LargeScale_Virtual_Screening_pipeline_design.md)
+* [Large-scale Virtual Screening (Hardware Recommendations)](./04_LargeScale_Virtual_Screening_hardware_recommendations.md)
+* [Large-scale Virtual Screening (Chemical Space Navigation Pipeline v1.0)](./05_LargeScale_Virtual_Screening_pipeline_design.md)
   
 ### AI Workflow Engineering
 * Reproducing AI Behavior Across Independent Chat Sessions 
