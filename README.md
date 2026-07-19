@@ -11,10 +11,10 @@ Biomedical workflow documentation, automation pipelines, and reproducible comput
 * [A $170k (NT$5.4M) Virtual Screening Pipeline (The Upgraded Pipeline)](./02_Upgraded_virtual_screening.md)
 * Large-scale Virtual Screening 
 
-### AI
-* Reproducing AI behavior across independent chat sessions 
-* Improving AI response precision 
-* Building high-accuracy lecture notes using AI and Whisper 
+### AI Workflow Engineering
+* Reproducing AI Behavior Across Independent Chat Sessions 
+* Improving AI Response Precision through Context Engineering 
+* Building High-Accuracy Lecture Notes Using AI and Whisper
  
 ### Data Engineering
 * Reimplementing SAS-based clinical data processing workflows in Python 
