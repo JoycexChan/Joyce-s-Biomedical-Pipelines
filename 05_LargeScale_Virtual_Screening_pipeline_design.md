@@ -22,7 +22,8 @@ ________________________________________
 ### Step 00 — Download and Prepare the Compound Library
 Download your compound library and perform energy minimization.
 (For very large databases, choosing one that already provides preprocessed structures is probably more convenient. You can do it yourself if you really want to.)
-Step 01 — Build the Index
+________________________________________
+## Step 01 — Build the Index
 Create a searchable catalog.
 You can store everything in a single database if you want.
 For ten million compounds, however, separating the information may be more practical:
@@ -41,7 +42,7 @@ The charge categories are:
 •	Negative
 •	Zwitterionic (contains both positive and negative atoms)
 ________________________________________
-Step 01–1 — Generate Shape Garage IDs Using USR
+## Step 01–1 — Generate Shape Garage IDs Using USR
 (Ultrafast Shape Recognition)
 The basic idea is:
 Center of mass
@@ -62,7 +63,7 @@ Congratulations.
 You now have a shape garage number.
 (You can call them BMW, Ferrari, or whatever makes your heart happy.)
 ________________________________________
-Step 01–2 — Calculate Molecular Volume
+## Step 01–2 — Calculate Molecular Volume
 Use RDKit:
 ComputeMolVolume()
 or
@@ -73,7 +74,7 @@ Output:
 •	Volume
 Now every car knows whether it’s a compact car or a giant truck.
 ________________________________________
-Step 01–3 — Charge-State Classification
+## Step 01–3 — Charge-State Classification
 For this example, I will use physiological pH 7.4.
 If your experiment uses a different pH, adjust accordingly.
 Use:
@@ -102,7 +103,7 @@ In other words:
 Perfect.
 The parking lot management system is now operational.
 ________________________________________
-Step 02 — Two Possible Starting Points
+## Step 02 — Two Possible Starting Points
 There are two ways to begin.
 Route A — You Already Have a Lead
 Maybe you already know what kind of compounds you’re interested in.
