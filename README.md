@@ -5,7 +5,7 @@ Biomedical workflow documentation, automation pipelines, and reproducible comput
 
 ### Molecular Dynamics
 * Developing a 3D molecular dynamics interpretation workflow to infer mutation-to-active-site pathways and identify key structural mechanisms.
-* Related Publications (10 peer-reviewed papers)
+* Related Publications (10 peer-reviewed journal articles)(./03_Related Publications.md)
 
 ### Virtual Screening
 * [A $170k (NT$5.4M) Virtual Screening Pipeline (Currently supporting two ongoing NSTC-funded research projects.)](./01_beginner_virtual_screening.md)
