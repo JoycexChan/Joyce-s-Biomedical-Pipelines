@@ -1,7 +1,8 @@
 # How to Build a 10-Million-Compound Screening Pipeline for Under $6,000 — and Why You Probably Shouldn’t Screen All 10 Million Compounds Anyway (Hardware Recommendations)
 ________________________________________
 ## This article has two sections.
-* The first part covers hardware recommendations. When my former PI moved to a new university, I rebuilt the laboratory from scratch and independently handled the entire planning and procurement process. I managed servers, workstations, RTX 3090 gaming PCs, Linux systems, and Windows systems.
+* The first part covers hardware recommendations.
+When my former PI moved to a new university, I rebuilt the laboratory from scratch and independently handled the entire planning and procurement process. I managed servers, workstations, RTX 3090 gaming PCs, Linux systems, and Windows systems.
 * The second part covers the actual pipeline design: how to classify compounds before large-scale virtual screening in order to reduce computation time.
 ________________________________________
 ## Hardware Recommendations
