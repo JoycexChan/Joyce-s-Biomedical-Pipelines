@@ -328,8 +328,6 @@ Rewrite bond topology tables
 Run Open Babel energy minimization
 Let the force field relax the structure back into a valid energy surface
 
-________________________________________
-
-## Finally:
+Finally:
 
 feed the modified structures back into the batch docking pipeline again.
