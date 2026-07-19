@@ -8,7 +8,7 @@ Biomedical workflow documentation, automation pipelines, and reproducible comput
 * [Related Publications (10 peer-reviewed journal articles)](./03_Related_Publications.md)
 
 ### Virtual Screening
-* [A $170k (NT$5.4M) Virtual Screening Pipeline (Currently supporting two ongoing NSTC-funded research projects.)](./01_beginner_virtual_screening.md)
+* [A $170k (NT$5.4M) Virtual Screening Pipeline (Used in two NSTC-funded research projects.)](./01_beginner_virtual_screening.md)
 * [A $170k (NT$5.4M) Virtual Screening Pipeline (The Upgraded Pipeline)](./02_Upgraded_virtual_screening.md)
 * Large-scale Virtual Screening 
 
