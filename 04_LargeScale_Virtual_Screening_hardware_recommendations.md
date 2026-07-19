@@ -41,7 +41,7 @@ One month to two and a half months.
 
 That’s already within a range many academic labs can tolerate.
 ________________________________________
-## A gaming workstation(RTX 5090) usable for around five years
+## A gaming workstation (RTX 5090) usable for around five years
 A gaming workstation equipped with an RTX 5090 costs roughly NT$200,000 and should remain usable for around five years.
 
 If it breaks during the warranty period, send it back for repair.
@@ -54,7 +54,7 @@ I also recommend setting up a system recovery image.
 
 If the problem is purely software-related, restoring the system from the recovery image is much faster than waiting two weeks for IT support.
 ________________________________________
-## Pipeline design (the runtime should be reduced to a few weeks)
+## Pipeline Design (Reducing Runtime to a Few Weeks)
 
 However, our actual goal is preventing the PI from constantly asking:
 “Is it done yet?”
@@ -65,7 +65,7 @@ That’s where Part 2 comes in.
 
 The compound classification strategy described in Part 2 should significantly reduce the overall runtime.
 ________________________________________
-## Hundred-million-compound libraries (hardware recommendations)
+## Hundred-million-compound Libraries (Hardware Recommendations)
 
 If you want to move into hundred-million-compound libraries, you’ll probably need a NAS and multiple RTX 5090 systems running in parallel.
 
