@@ -136,9 +136,7 @@ ________________________________________
 
 There are two ways to begin.
 
-### Route A — You Already Have a Lead
-
-Maybe you already know what kind of compounds you’re interested in.
+### Route A — You Already Have a Lead Maybe you already know what kind of compounds you’re interested in.
 
 Or maybe you’ve run an FDA drug screening campaign and found something that looks promising.
 
