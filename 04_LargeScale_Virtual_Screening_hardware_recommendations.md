@@ -5,6 +5,9 @@ ________________________________________
 * The second part covers the actual pipeline design: how to classify compounds before large-scale virtual screening in order to reduce computational time.
 ________________________________________
 ## Hardware Recommendations
+
+### 10,000 FDA-approved drugs at exhaustiveness 16, the job took roughly three days.
+
 Let’s start with AutoDock.
 
 * According to this paper:
