@@ -12,8 +12,11 @@ Large benchmark tests show that Vina-GPU reaches an average of 21.66× and a max
 https://pmc.ncbi.nlm.nih.gov/articles/PMC9103882/
 
 We can see that using an RTX 3090 provides approximately 21.66×–50.80× acceleration compared with CPU docking.
+
 The RTX 5090 (memory bandwidth: 1792 GB/s) has approximately 1.91× the memory bandwidth of the RTX 3090 (936 GB/s).
+
 Of course, docking workloads are not entirely GPU-bound, so actual performance gains will not scale perfectly. There will always be some overhead.
+
 Back when I was running a library of 10,000 FDA-approved drugs at exhaustiveness 16, the job took roughly three days.
 ________________________________________
 For ultra-large virtual screening projects, you can usually lower the exhaustiveness setting a bit. Screening ten million compounds doesn’t require the same level of precision as a final lead optimization stage.
