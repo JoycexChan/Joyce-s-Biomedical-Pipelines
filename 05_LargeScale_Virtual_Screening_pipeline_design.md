@@ -136,7 +136,9 @@ ________________________________________
 
 There are two ways to begin.
 
-### Route A — You Already Have a Lead Maybe you already know what kind of compounds you’re interested in.
+### Route A — You Already Have a Lead 
+
+Maybe you already know what kind of compounds you’re interested in.
 
 Or maybe you’ve run an FDA drug screening campaign and found something that looks promising.
 
@@ -184,8 +186,8 @@ Personally, I’m too lazy to deal with that, so I’d just include everything.
 You can also put the garage ID directly into the compound name if that helps with tracking.
 
 Honestly though, we already built a catalog, so whether you do this or not doesn’t really matter.
-
-Deploy the Probe Cars
+________________________________________
+## Deploy the Probe Cars
 
 Launch the probe cars.
 
@@ -289,9 +291,11 @@ Therefore:
 
 A large fraction of the library can be removed before docking even begins.
 ________________________________________
-## Because docking isn’t the end of the story, It has to remain bound long enough for inhibition or activation to occur.
+## Docking Isn't the End of the Story
 
-But Honestly?
+The ligand has to remain bound long enough for inhibition or activation to occur.
+
+But honestly?
 
 I genuinely don’t think you need to screen everything.
 
