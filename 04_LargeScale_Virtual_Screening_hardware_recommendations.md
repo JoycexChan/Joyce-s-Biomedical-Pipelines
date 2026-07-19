@@ -1,8 +1,8 @@
-# How to Build a 10-Million-Compound Screening Pipeline for Under $6,000 — and Why You Probably Shouldn’t Screen All 10 Million Compounds Anyway (hardware recommendations)
+# How to Build a 10-Million-Compound Screening Pipeline for Under $6,000 — and Why You Probably Shouldn’t Screen All 10 Million Compounds Anyway (Hardware Recommendations)
 ________________________________________
 ## This article has two sections.
-* The first part covers hardware recommendations. When my former PI moved to a new university, I rebuilt the laboratory from scratch and independently handled the entire planning and procurement process. I’ve managed servers, workstations, RTX 3090 gaming PCs, Linux systems, and Windows systems.
-* The second part covers the actual pipeline design: how to classify compounds before large-scale virtual screening in order to reduce computational time.
+* The first part covers hardware recommendations. When my former PI moved to a new university, I rebuilt the laboratory from scratch and independently handled the entire planning and procurement process. I managed servers, workstations, RTX 3090 gaming PCs, Linux systems, and Windows systems.
+* The second part covers the actual pipeline design: how to classify compounds before large-scale virtual screening in order to reduce computation time.
 ________________________________________
 ## Hardware Recommendations
 
@@ -44,7 +44,7 @@ ________________________________________
 ## A gaming workstation(RTX 5090) usable for around five years
 A gaming workstation equipped with an RTX 5090 costs roughly NT$200,000 and should remain usable for around five years.
 
-If it breaks during warranty, send it back for repair.
+If it breaks during the warranty period, send it back for repair.
 
 After five years? 
 
@@ -52,9 +52,9 @@ Cross your fingers and pray to the hardware gods. On the bright side, academia u
 
 I also recommend setting up a system recovery image. 
 
-If the problem is purely software-related, restoring the system is much faster than waiting two weeks for IT support.
+If the problem is purely software-related, restoring the system from the recovery image is much faster than waiting two weeks for IT support.
 ________________________________________
-## pipeline design (the runtime should be reduced to a few weeks)
+## Pipeline design (the runtime should be reduced to a few weeks)
 
 However, our actual goal is preventing the PI from constantly asking:
 “Is it done yet?”
@@ -63,9 +63,9 @@ Ideally, the runtime should be reduced to a few weeks rather than a few months.
 
 That’s where Part 2 comes in.
 
-The compound classification strategy described in Part 2 should significantly reduce the screening time.
+The compound classification strategy described in Part 2 should significantly reduce the overall runtime.
 ________________________________________
-## hundred-million-compound libraries (hardware recommendations)
+## Hundred-million-compound libraries (hardware recommendations)
 
 If you want to move into hundred-million-compound libraries, you’ll probably need a NAS and multiple RTX 5090 systems running in parallel.
 
