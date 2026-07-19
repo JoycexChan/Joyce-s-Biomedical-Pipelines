@@ -14,7 +14,7 @@ Biomedical workflow documentation, automation pipelines, and reproducible comput
 ### AI Workflow Engineering
 * Reproducing AI Behavior Across Independent Chat Sessions 
 * Improving AI Response Precision through Context Engineering 
-* Building High-Accuracy Lecture Notes Using AI and Whisper
+* Building a High-Accuracy Knowledge Extraction Workflow Using AI and Whisper
  
 ### Data Engineering
 * Reimplementing SAS-based clinical data processing workflows in Python 
