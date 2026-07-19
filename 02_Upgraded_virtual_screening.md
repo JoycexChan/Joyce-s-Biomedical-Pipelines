@@ -72,7 +72,7 @@ Run it in the Linux background for bulk processing.
 
 ________________________________________
 
-Step 2｜Drug Sources: Where Thousands of  Small Molecules Come From
+### Step 2｜Drug Sources: Where Thousands of Small Molecules Come From
 When updating databases, simply compare existing records and only download new compounds.
 
 If you are extremely lazy, rerunning the entire dataset is honestly not a disaster either.
@@ -108,7 +108,7 @@ drug-target relationships
 
 ________________________________________
 
-Step 3｜Small-Molecule Cleanup and Standardization
+### Step 3｜Small-Molecule Cleanup and Standardization
 Downloaded SDF files often contain:
 
 salts
@@ -127,14 +127,14 @@ ensure chemically valid bonds
 
 ________________________________________
 
-Step 4｜Energy Minimization (Bulk Mode)
+### Step 4｜Energy Minimization (Bulk Mode)
 This can be performed directly from the command line using:
 
 Open Babel
 
 ________________________________________
 
-Step 5｜Format Conversion and Docking Preparation
+### Step 5｜Format Conversion and Docking Preparation
 AutoDock Vina does not accept:
 
 .sdf
@@ -160,7 +160,7 @@ from the AutoDock toolkit to convert it into .pdbqt.
 
 ________________________________________
 
-Step 6｜Grid Box: The Most Common Failure Point
+### Step 6｜Grid Box: The Most Common Failure Point
 You must tell Vina where the binding pocket is.
 
 If the original protein already contains a ligand:
@@ -175,7 +175,7 @@ That feature is free.
 
 ________________________________________
 
-Step 7｜Batch Docking Script (AutoDock Vina)
+### Step 7｜Batch Docking Script (AutoDock Vina)
 Write a Python script that:
 
 traverses all compounds in a folder
@@ -184,7 +184,7 @@ using AutoDock Vina.
 
 ________________________________________
 
-Step 8｜Result Ranking and Preliminary Filtering
+### Step 8｜Result Ranking and Preliminary Filtering
 Remember:
 
 What we actually need is:
@@ -241,7 +241,7 @@ Too many structures may cause lag.
 
 ________________________________________
 
-Step 9｜PyMOL Visualization and “Information Hand-Off to Synthetic Chemists”
+### Step 9｜PyMOL Visualization and “Information Hand-Off to Synthetic Chemists”
 You can always skim a few 3D-QSAR papers, memorize some terminology, and sound highly professional.
 
 But the core logic is roughly this:
@@ -312,7 +312,7 @@ Add positively charged or electron-donating groups:
 
 ________________________________________
 
-Extension｜If the Synthetic Chemist Wants to Modify Functional Groups
+### Extension｜If the Synthetic Chemist Wants to Modify Functional Groups
 At that point, the structure can be handed over to a synthetic chemist.
 
 If they want to modify substituents:
@@ -330,6 +330,6 @@ Let the force field relax the structure back into a valid energy surface
 
 ________________________________________
 
-Finally:
+## Finally:
 
 feed the modified structures back into the batch docking pipeline again.
