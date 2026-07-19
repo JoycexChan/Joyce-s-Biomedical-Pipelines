@@ -21,21 +21,28 @@ Let’s start by removing the ones that obviously can’t fit into the parking l
 ________________________________________
 ### Step 00 — Download and Prepare the Compound Library
 Download your compound library and perform energy minimization.
+
 (For very large databases, choosing one that already provides preprocessed structures is probably more convenient. You can do it yourself if you really want to.)
 ________________________________________
 ## Step 01 — Build the Index
+
 Create a searchable catalog.
+
 You can store everything in a single database if you want.
+
 For ten million compounds, however, separating the information may be more practical:
-File A
+### File A
 •	unique ID
 •	Compound information
-File B
+
+### File B
 •	unique ID
 •	Shape garage ID
 •	Molecular volume
 •	Charge category
+
 Assign each compound a unique ID so the two files can be merged later.
+
 The charge categories are:
 •	Neutral
 •	Positive
