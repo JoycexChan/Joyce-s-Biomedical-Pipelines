@@ -32,22 +32,22 @@ You can store everything in a single database if you want.
 
 For ten million compounds, however, separating the information may be more practical:
 ### File A
-•	unique ID
-•	Compound information
+*	unique ID
+*	Compound information
 
 ### File B
-•	unique ID
-•	Shape garage ID
-•	Molecular volume
-•	Charge category
+*	unique ID
+*	Shape garage ID
+*	Molecular volume
+*	Charge category
 
 Assign each compound a unique ID so the two files can be merged later.
 
 The charge categories are:
-•	Neutral
-•	Positive
-•	Negative
-•	Zwitterionic (contains both positive and negative atoms)
+*	Neutral
+*	Positive
+*	Negative
+*	Zwitterionic (contains both positive and negative atoms)
 ________________________________________
 ## Step 01–1 — Generate Shape Garage IDs Using USR
 (Ultrafast Shape Recognition)
