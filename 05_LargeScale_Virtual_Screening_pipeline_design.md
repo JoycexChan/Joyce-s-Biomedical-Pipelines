@@ -1,16 +1,25 @@
-How to Build a 10-Million-Compound Screening Pipeline for Under $6,000 — and Why You Probably Shouldn’t Screen All 10 Million Compounds Anyway (Pipeline Design)
- 
-This article has two sections.
-The first part covered hardware recommendations. When my former PI moved to a new university, I rebuilt the laboratory from scratch and independently handled the entire planning and procurement process. I’ve managed servers, workstations, RTX 3090 gaming PCs, Linux systems, and Windows systems.
-The second part covers the actual pipeline design: how to classify compounds before large-scale virtual screening in order to reduce computational time.
-Professor, Professor, Baby P clearly needs more overtime. ♬(ノ゜∇゜)ノ♩
+# How to Build a 10-Million-Compound Screening Pipeline for Under $6,000 (Pipeline Design)
+## — and Why You Probably Shouldn’t Screen All 10 Million Compounds Anyway 
+________________________________________
+## This article has two sections.
+When my former PI moved to a new university, I rebuilt the laboratory from scratch and independently handled the entire planning and procurement process. 
+
+I managed servers, workstations, RTX 3090 gaming PCs, Linux systems, and Windows systems.
+
+* The first part covers hardware recommendations.
+* The second part covers the actual pipeline design: how to classify compounds before large-scale virtual screening in order to reduce computation time.
+________________________________________
+## Chemical Space Navigation Pipeline v1.0
 Let’s take a look at the actual pipeline.
-Chemical Space Navigation Pipeline v1.0
 (There will probably never be a Version 2. I’ve already escaped into the medical data field.)
+
 Construct a searchable molecular index using shape, volume, and protonation-state annotations, then use neutral shape probes to estimate pocket preferences and eliminate obviously incompatible compounds before large-scale docking.
+
 We have ten million little cars (Ligand).
+
 Let’s start by removing the ones that obviously can’t fit into the parking lot (pocket).
-Step 00 — Download and Prepare the Compound Library
+________________________________________
+### Step 00 — Download and Prepare the Compound Library
 Download your compound library and perform energy minimization.
 (For very large databases, choosing one that already provides preprocessed structures is probably more convenient. You can do it yourself if you really want to.)
 Step 01 — Build the Index
@@ -31,6 +40,7 @@ The charge categories are:
 •	Positive
 •	Negative
 •	Zwitterionic (contains both positive and negative atoms)
+________________________________________
 Step 01–1 — Generate Shape Garage IDs Using USR
 (Ultrafast Shape Recognition)
 The basic idea is:
@@ -51,6 +61,7 @@ USR shape vector
 Congratulations.
 You now have a shape garage number.
 (You can call them BMW, Ferrari, or whatever makes your heart happy.)
+________________________________________
 Step 01–2 — Calculate Molecular Volume
 Use RDKit:
 ComputeMolVolume()
@@ -61,6 +72,7 @@ Output:
 •	Compound_ID
 •	Volume
 Now every car knows whether it’s a compact car or a giant truck.
+________________________________________
 Step 01–3 — Charge-State Classification
 For this example, I will use physiological pH 7.4.
 If your experiment uses a different pH, adjust accordingly.
@@ -89,6 +101,7 @@ In other words:
 •	Vehicle color
 Perfect.
 The parking lot management system is now operational.
+________________________________________
 Step 02 — Two Possible Starting Points
 There are two ways to begin.
 Route A — You Already Have a Lead
@@ -132,6 +145,7 @@ Congratulations.
 Work finished.
 Time for analysis.
 (Of course, if there aren’t many cars, you can still dock everything.)
+________________________________________
 Analysis
 A. Volume Analysis
 At some point you’ll discover the largest compound size the pocket can realistically accommodate.
@@ -163,6 +177,7 @@ pull out the negatively charged cars.
 And don’t forget:
 Eliminate everything larger than the maximum volume identified during Volume Analysis.
 Dock.
+________________________________________
 Analyze.
 Go home.
 You really don’t need to screen all ten million compounds.
@@ -174,6 +189,7 @@ Once you’ve identified strong van der Waals packing preferences, you can then 
 (You should already know what kind of electrical outlets exist inside your parking lot.)
 That’s how you obtain high-affinity docking candidates.
 At this point you can begin analyzing the data.
+________________________________________
 If you’re still worried, you can always keep the full ten-million-compound screening running in the background while you analyze.
 But remember:
 You already know:
@@ -183,6 +199,7 @@ Therefore:
 •	Compounds larger than the volume limit don’t need to be screened.
 •	Compounds with incompatible charge states don’t need to be screened.
 A large fraction of the library can be removed before docking even begins.
+________________________________________
 But Honestly?
 I genuinely don’t think you need to screen everything.
 I’ve spent 11.5 years working in molecular dynamics.
