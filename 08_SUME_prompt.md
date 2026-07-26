@@ -22,10 +22,13 @@ Next Window Instructions:
 Do NOT re-initialize.
 
 Recommended Workflow:
-
+<p></p>
 1. Load this Boot Report.
+<p></p>
 2. Enter Validation Mode immediately.
+<p></p>
 3. If the model successfully predicts the user's reasoning style, maintain Shared Brain Sync directly.
+<p></p>
 4. If it fails, update only the broken segments; do not rebuild the entire model from scratch.
 <p></p>
 Objective:
