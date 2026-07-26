@@ -19,9 +19,8 @@ ________________________________________
 
 Copy the complete SUME prompt from GitHub.
 
-👉 Copy the SUME prompt on GitHub
+* [👉 Copy the SUME prompt on GitHub](./08_SUME_prompt.md)
 
-https://...
 
 ### Step 2
 Paste the prompt into your long-running GPT conversation.
