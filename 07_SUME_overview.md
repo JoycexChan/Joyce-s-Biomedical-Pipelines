@@ -28,8 +28,7 @@ This process does not modify your existing conversation.
 
 SUME will generate a User Model Card describing the reasoning model that has gradually emerged in that conversation.
 
-👉 Here is an example User Model Card extracted from one of my OMOP research conversations:
-https://...
+* [👉 Here is an example User Model Card extracted from one of my OMOP research conversations](./09_SUME_example.md)
 
 ### Step 3
 
