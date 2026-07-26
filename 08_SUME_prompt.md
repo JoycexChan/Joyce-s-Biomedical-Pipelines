@@ -8,6 +8,7 @@
 6. Critical Constraints (High Priority)
 <p></p>
 ## At the very end, append the following section:
+<p></p>
 7. Next Session Protocol
 <p></p>
 
