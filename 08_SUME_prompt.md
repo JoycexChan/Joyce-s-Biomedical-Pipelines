@@ -6,10 +6,10 @@
 4. Preference Model (Collaboration Preferences)
 5. Shared Vocabulary
 6. Critical Constraints (High Priority)
-<hr>
+<p></p>
 ## At the very end, append the following section:
 7. Next Session Protocol
-<hr>
+<p></p>
 Next Window Instructions:
 Do NOT re-initialize.
 Recommended Workflow:
