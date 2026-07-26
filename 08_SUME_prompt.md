@@ -1,5 +1,6 @@
 # Stable User Model Extractor（SUME）
 ## Please output the Stable User Model for this chat session, covering the following six sections:
+<p></p>
 1. Capability Model
 2. Decision Model
 3. Reasoning Model
@@ -7,7 +8,7 @@
 5. Shared Vocabulary
 6. Critical Constraints (High Priority)
 <p></p>
-## At the very end, append the following section:
+At the very end, append the following section:
 <p></p>
 7. Next Session Protocol
 <p></p>
