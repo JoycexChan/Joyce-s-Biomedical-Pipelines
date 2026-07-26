@@ -2,17 +2,16 @@
 ## Please output the Stable User Model for this chat session, covering the following six sections:
 <p></p>
 1. Capability Model
-
+<p></p>
 2. Decision Model
-   
+<p></p> 
 3. Reasoning Model
-   
+<p></p>
 4. Preference Model (Collaboration Preferences)
-   
+<p></p>
 5. Shared Vocabulary
-   
+<p></p>
 6. Critical Constraints (High Priority)
-    
 <p></p>
 At the very end, append the following section:
 <p></p>
