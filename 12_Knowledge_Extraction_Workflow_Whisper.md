@@ -1,4 +1,17 @@
 # Building a High-Accuracy Knowledge Extraction Workflow Using AI and Whisper
+I believe every instructional video has a central thread.
+
+AI can first build a summary as a knowledge skeleton, helping learners quickly understand the overall structure.
+
+However, knowledge acquisition cannot rely entirely on AI-generated summaries. Speakers often compress years of background knowledge into a few sentences, and those details can easily be lost during summarization.
+
+The learner should therefore use the transcript to fill the skeleton with the context and details behind the speaker’s words.
+
+AI builds the skeleton; the learner fills in the flesh.
+
+The goal is not simply to summarize a video, but to turn its information into knowledge the learner can truly understand and retain.
+
+---
 
 ## From Long-Form Training Videos to Searchable, Reusable Knowledge
 
