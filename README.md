@@ -7,14 +7,12 @@ Biomedical workflow documentation, automation pipelines, and reproducible comput
 **Applied in Professional Practice**
 * [Building a Pathway Analysis Workflow for Investigating Mutation Effects from Molecular Dynamics Trajectories](./10_MD_Pathway_Analysis.md)
 * [Related Publications (10 peer-reviewed journal articles)](./03_Related_Publications.md)
-  
 **Independent Extension After Employment**
 * [How to Identify Potentially Critical Amino Acids from Differences in Interactions Between WT and MT](./11_Upgraded_MD_Pathway_Analysis.md)
 
 ### Virtual Screening
 **Applied in Professional Practice**
 * [Virtual Screening Pipeline](./01_beginner_virtual_screening.md)
-  
 **Applied in Professional Practice**
 * [Virtual Screening Pipeline (The Upgraded Pipeline)](./02_Upgraded_virtual_screening.md)
 * [Large-scale Virtual Screening (Hardware Recommendations)](./04_LargeScale_Virtual_Screening_hardware_recommendations.md)
