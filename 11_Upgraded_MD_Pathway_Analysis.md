@@ -191,8 +191,6 @@ where:
 * `WT.dcd` contains the 500-frame trajectory.
 * `MT.pdb` and `MT.dcd` contain the corresponding mutant structure and trajectory.
 
----
-
 ### Important: Keep Only Cα and Cβ Atoms
 
 Before running MD-TASK, keep only the **Cα and Cβ atoms**.
@@ -225,8 +223,6 @@ Residue A ↔ Residue B
 ```
 
 This percentage represents how frequently the interaction exists throughout the trajectory.
-
----
 
 ### Correct the Amino-Acid Numbering
 
