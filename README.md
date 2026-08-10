@@ -9,7 +9,7 @@ ________________________________________
 * [Building a High-Accuracy Knowledge Extraction Workflow Using AI and Whisper](./12_Knowledge_Extraction_Workflow_Whisper.md)
   
 **Independent Research Driven by Personal Interest**
-* Improving AI Response Precision through Context Engineering
+* Context Engineering for Long-Term AI Collaboration
   * [Overview](./06_AI_Workflow_Engineering.md)
   * [SUME — Reproducing AI Behavior Across Independent Chat Sessions.](./07_SUME_overview.md)
   * [SBIP — Building a Stable User Model through interactive initialization.](./13_SBIP_overview.md)
