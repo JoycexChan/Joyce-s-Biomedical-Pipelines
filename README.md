@@ -3,7 +3,16 @@ Biomedical workflow documentation, automation pipelines, and reproducible comput
 
 ________________________________________
 ## 📚 文章目錄 (Table of Contents)
+________________________________________
+### AI Workflow Engineering
+**Applied in Professional Practice**
+* Building a High-Accuracy Knowledge Extraction Workflow Using AI and Whisper
+  
+**Independent Extension After Employment**
+* Reproducing AI Behavior Across Independent Chat Sessions 
+* Improving AI Response Precision through Context Engineering 
 
+________________________________________
 ### Molecular Dynamics
 **Applied in Professional Practice**
 * [Building a Pathway Analysis Workflow for Investigating Mutation Effects from Molecular Dynamics Trajectories](./10_MD_Pathway_Analysis.md)
