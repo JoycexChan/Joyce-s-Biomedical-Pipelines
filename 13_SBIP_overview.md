@@ -55,7 +55,7 @@ Enter:
 
 > **"Please output the AI-Readable Model Card (Boot Configuration)."**
 
-[👉 This is an example of my SBIP output.](./14_SBIP_example.md)
+👉[This is an example of my SBIP output.](./14_SBIP_example.md)
 
 ### ♻️ Continuous Synchronization
 
