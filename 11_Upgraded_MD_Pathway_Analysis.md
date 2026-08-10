@@ -16,7 +16,7 @@ Instead of manually checking a large number of amino-acid pairs, the analysis fi
 
 ---
 
-# Environment Setup
+## Environment Setup
 
 First, check your current working directory:
 
@@ -28,7 +28,7 @@ pwd
 
 ---
 
-## 1. Install Python 3.7
+### 1. Install Python 3.7
 
 Install Python 3.7:
 
@@ -42,7 +42,7 @@ export PATH=$PATH:/usr/local/bin/python
 
 ---
 
-## 2. Install MD-TASK
+### 2. Install MD-TASK
 
 Install **MD-TASK**.
 
@@ -50,7 +50,7 @@ The installation may take some time, so it may be worth making a backup of the c
 
 ---
 
-## 3. Install NumPy and Related Packages
+### 3. Install NumPy and Related Packages
 
 Try upgrading NumPy first:
 
@@ -74,7 +74,7 @@ pip install scikit-learn
 
 ---
 
-# 4. Install R
+## 4. Install R
 
 For CentOS:
 
@@ -113,7 +113,7 @@ R installation is then complete.
 
 ---
 
-# 5. Virtual Environment
+### 5. Virtual Environment
 
 Enter the `env1` virtual environment:
 
@@ -131,7 +131,7 @@ The exact virtual-environment setup may vary depending on the system configurati
 
 ---
 
-# 6. MD-TASK
+### 6. MD-TASK
 
 For MD-TASK installation, refer to the official documentation:
 
@@ -164,7 +164,7 @@ Then run:
 
 ---
 
-# 7. Install Gephi
+### 7. Install Gephi
 
 On a Windows computer, install:
 
@@ -174,7 +174,7 @@ Gephi will be used to visualize and inspect the dynamic structural network gener
 
 ---
 
-# Materials
+## Materials
 
 You will need:
 
@@ -193,7 +193,7 @@ where:
 
 ---
 
-# Important: Keep Only Cα and Cβ Atoms
+### Important: Keep Only Cα and Cβ Atoms
 
 Before running MD-TASK, keep only the **Cα and Cβ atoms**.
 
@@ -203,7 +203,7 @@ The purpose is to simplify the structural representation used for the interactio
 
 ---
 
-# Generate the Dynamic Structural Network with MD-TASK
+## Generate the Dynamic Structural Network with MD-TASK
 
 Run MD-TASK on the WT and MT trajectories.
 
@@ -228,7 +228,7 @@ This percentage represents how frequently the interaction exists throughout the 
 
 ---
 
-# Correct the Amino-Acid Numbering
+### Correct the Amino-Acid Numbering
 
 At this stage, make sure that the amino-acid IDs correspond to the **actual numbering of the protein**.
 
@@ -248,7 +248,7 @@ Actual protein residue
 
 ---
 
-# Prepare the Residue Annotation Table
+## Prepare the Residue Annotation Table
 
 Create a CSV file containing the amino-acid names and their correct residue numbers obtained from the previous step.
 
@@ -284,7 +284,7 @@ The important point is that **each secondary structure or structural segment is 
 
 ---
 
-# The Three-Level Search Strategy
+## The Three-Level Search Strategy
 
 The analysis is performed in three levels:
 
@@ -303,7 +303,7 @@ The purpose is to progressively reduce the search space.
 
 ---
 
-# Level 1 — Structural Unit Interaction Network
+### Level 1 — Structural Unit Interaction Network
 
 The first layer treats each secondary structure or structural segment as a single block.
 
@@ -343,7 +343,7 @@ This dramatically reduces the search space.
 
 ---
 
-# Level 2 — Drill Down to Residues
+### Level 2 — Drill Down to Residues
 
 Once the affected structural units have been identified, move to the residue level.
 
@@ -385,7 +385,7 @@ Every candidate eventually becomes additional manual analysis.
 
 ---
 
-# Level 3 — Drill Down to Atoms
+### Level 3 — Drill Down to Atoms
 
 Only after the candidate amino-acid pairs have been identified do we move to the atom level.
 
@@ -418,7 +418,7 @@ CPPTRAJ will calculate the distances for all frames.
 
 ---
 
-# Generate WT/MT Distance Comparison Plots
+## Generate WT/MT Distance Comparison Plots
 
 Once the distance calculations are complete, the resulting distance files can be plotted using **gnuplot**.
 
@@ -448,7 +448,7 @@ The purpose is to visually inspect whether the candidate interaction shows a mea
 
 ---
 
-# The Complete Workflow
+## The Complete Workflow
 
 The entire process can therefore be summarized as:
 
