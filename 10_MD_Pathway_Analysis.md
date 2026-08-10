@@ -20,7 +20,7 @@ This article can therefore be viewed as a historical record of a molecular dynam
 
 After writing this article, I also came up with an idea for further automating part of the analysis using Python. If this approach is useful to you, the next article will explore **how to identify potentially critical amino acids from differences in interactions between WT and MT**.
 
-### If this article uses **human visual inspection and literature information to infer the pathway**, the next article will use Python to **narrow down the range of amino acids potentially affected by the mutation**. This effectively introduces an analyzable intermediate layer between the starting and ending points of the pathway, making it easier for graduate students who are new to molecular dynamics analysis to infer the overall pathway without relying entirely on manual observation.
+If this article uses **human visual inspection and literature information to infer the pathway**, the next article will use Python to **narrow down the range of amino acids potentially affected by the mutation**. This effectively introduces an analyzable intermediate layer between the starting and ending points of the pathway, making it easier for graduate students who are new to molecular dynamics analysis to infer the overall pathway without relying entirely on manual observation.
 
 ---
 
