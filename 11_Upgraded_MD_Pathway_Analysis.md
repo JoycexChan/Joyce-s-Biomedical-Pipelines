@@ -16,6 +16,18 @@ Instead of manually checking a large number of amino-acid pairs, the analysis fi
 
 ---
 
+## This level of analysis is sufficient to reduce the amount of domain-specific background knowledge required for manual interpretation.
+
+Instead of asking the analyst to infer the entire pathway directly from a complex 3D trajectory, the protein can first be divided into structural building blocks. The analysis then helps identify the key intermediate amino acids connecting these blocks.
+
+The resulting pathway can be simplified into:
+
+Mutation Site → Key Intermediate Residues → Active Site
+
+These structural building blocks provide the intermediate steps needed to connect the initial mutation to the final functional effect, allowing the complete pathway to be reconstructed as a coherent mechanistic story.
+
+---
+
 ## Environment Setup
 
 First, check your current working directory:
