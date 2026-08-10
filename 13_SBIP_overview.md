@@ -4,7 +4,7 @@
 
 [GPTs link here](https://chatgpt.com/g/g-6a506a9ac13881919befe669df62e869-shared-brain-initialization-protocol-sbip)
 
-After completing the GPT's questions, obtain the AI-Readable Model Card (Boot Configuration) and paste it into any new chat window. It can be used with GPT and Gemini. Do not use it with Claude, for reasons explained in the IRR documentation.
+**After completing the GPT's questions, obtain the AI-Readable Model Card (Boot Configuration) and paste it into any new chat window. It can be used with GPT and Gemini. Do not use it with Claude, for reasons explained in the IRR documentation.**
 
 It is not intended for personality analysis or psychological assessment. Instead, it progressively builds a **Stable User Model** through interaction, allowing the AI to understand your capabilities, decision-making patterns, reasoning style, and collaboration preferences while reducing the need to repeatedly explain yourself when starting a new conversation.
 
@@ -53,7 +53,7 @@ Enter:
 
 > **"Please output the AI-Readable Model Card (Boot Configuration)."**
 
-👉 This is an example of my SBIP output.
+[👉 This is an example of my SBIP output.](./14_SBIP_example.md)
 
 ### ♻️ Continuous Synchronization
 
