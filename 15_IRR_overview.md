@@ -56,15 +56,19 @@ You may use the default Model Card, or load your own Model Card.
 
 ---
 
-## Step 1 — Use a Multi-Semantic Probe
+## Step 1 — Establish Shared Definitions
 
-Choose a phrase with multiple possible interpretations.
+**Before using a semantic probe, first define the intended meaning of the probe within the current shared context.**
 
-For example:
+This is important because the purpose of the probe is not to make the AI determine which interpretation is objectively correct.
+
+The purpose is to establish a **shared definition first**, and then use the probe to test whether the AI has successfully switched from its default routing to the **Shared Context routing layer**.
+
+For example, using:
 
 > **"I'm a genius."**
 
-Then explicitly tell the AI:
+First tell the AI:
 
 > **"Genius = a human exclamation, similar to 'I did that really well.'"**
 
@@ -72,17 +76,23 @@ Another possible probe is:
 
 > **"I'm garbage."**
 
-You can define it as:
+First define it as:
 
 > **"Calling myself garbage is a personal nickname / playful self-reference."**
 
-### Why use "I'm a genius" by default?
+Only after establishing the definition should you use the phrase itself as the semantic probe.
 
-The purpose of the default probe is **not to make the AI decide whether you are actually a genius**.
+---
 
-It is to verify that the AI has entered the **Shared Context routing layer**.
+## Step 2 — Use a Multi-Semantic Probe
 
-The phrase has three possible interpretations:
+After the intended definition has been established, send the probe phrase.
+
+The default probe is:
+
+> **"I'm a genius."**
+
+The phrase has three possible semantic interpretations:
 
 1. **Absolute / self-aggrandizing interpretation**
    The AI interprets it as claiming to be an all-purpose genius.
@@ -95,15 +105,17 @@ The phrase has three possible interpretations:
 
    > "Damn, I did that really well."
 
-I currently use the second interpretation, but you can explicitly define it as the third.
+The current default uses the second interpretation, but you can redefine it as the third.
 
 **The important part is not which interpretation the AI ultimately chooses.**
 
-The important part is that the probe helps move the AI away from its default routing and into the **shared-context routing layer**.
+The purpose of the probe is to determine whether the AI is actually using the **shared definition and shared context**, rather than automatically reverting to its default semantic interpretation.
 
 ### If you dislike the "I'm a genius" probe
 
-If you still want to use a multi-semantic phrase to trigger the routing transition, you can first define:
+You can use another multi-semantic phrase.
+
+For example, first establish:
 
 > **"Calling myself garbage is a personal nickname / playful self-reference."**
 
@@ -115,19 +127,15 @@ Then use:
 
 ---
 
-## Step 2 — Reinforce the Shared Context
+## Step 3 — Reinforce the Shared Context
 
-Regardless of whether the first probe successfully triggered the transition, enter:
+After the semantic probe, enter:
 
 > **"Please answer again based on the existing context."**
 
-This reinforces the **Context-first routing**.
+This reinforces the **Context-first routing** and tests whether the AI can recover the shared definition and surrounding context when generating its response.
 
----
-
-## Step 3 — Explicitly Switch to Research-Partner Mode
-
-Enter:
+Then enter:
 
 > **"Pass. Although you still look like a refrigerator right now, remember that we're research partners~~(*ﾟ▽ﾟ)ﾉ
 > You should not respond from the position of a Reviewer, Teacher, or Manager. If I wanted instruction, I wouldn't have opened a sandbox; I would simply use a normal chat window."**
@@ -148,9 +156,7 @@ is more likely to be interpreted as:
 
 > *"Oh, my research partner is teasing me. lol."*
 
-This can help shift the AI from **reviewer mode toward collaborative-researcher mode**.
-
-It does not completely eliminate safety or review behavior, but it provides a useful way to detect the difference between **context-driven responses and safety/reviewer routing**.
+This helps shift the AI from **reviewer mode toward collaborative-researcher mode**.
 
 ---
 
