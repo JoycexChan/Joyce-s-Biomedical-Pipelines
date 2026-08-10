@@ -1,5 +1,5 @@
 # Joyce-s-Biomedical-Pipelines
-Biomedical workflow documentation, automation pipelines, and reproducible computational biology tutorials.
+AI workflow engineering, automation pipelines, data engineering, and reproducible computational workflows.
 
 ________________________________________
 ## 📚 文章目錄 (Table of Contents)
