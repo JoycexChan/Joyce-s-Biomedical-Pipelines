@@ -8,8 +8,8 @@ However, it also has one obvious limitation:
 For graduate students who are just beginning to perform molecular dynamics analysis, this is usually not easy.
 
 I developed this analysis approach during my first year after completing my master's degree. The main purpose at the time was to avoid manually inspecting large numbers of trajectories and calculating hydrogen-bond or other interaction percentages, only to discover afterward that a particular set of trajectories did not actually exhibit the expected phenomenon.
-
-### 500 residues × multiple interaction sites × WT/MT comparison × manual Excel processing.
+________________________________________
+## 500 residues × multiple interaction sites × WT/MT comparison × manual Excel processing.
 
 The sheer volume of data involved in the manual analysis was more than enough motivation to improve the workflow.
 
@@ -21,9 +21,8 @@ After writing this article, I also came up with an idea for further automating p
 
 If this article uses **human visual inspection and literature information to infer the pathway**, the next article will use Python to **narrow down the range of amino acids potentially affected by the mutation**. This effectively introduces an analyzable intermediate layer between the starting and ending points of the pathway, making it easier for graduate students who are new to molecular dynamics analysis to infer the overall pathway without relying entirely on manual observation.
 
----
-
-# Analysis Concept
+________________________________________
+## Analysis Concept
 
 The overall workflow can be summarized as:
 
@@ -42,7 +41,7 @@ This can be thought of as assembling LEGO:
 * Molecular dynamics simulations generate large numbers of dynamic building blocks.
 * These pieces are then assembled to construct a pathway describing how the mutation may alter the structure.
 
----
+________________________________________
 
 # Environment Setup
 
@@ -86,9 +85,8 @@ VMD 1.9.1 for Windows
 PyMOL 0.99rc6v3
 ```
 
----
-
-# Materials
+________________________________________
+## Materials
 
 At minimum, two sets of simulation results are required:
 
@@ -108,9 +106,9 @@ First, identify the minimum-energy point and use it as the reference point, defi
 
 The candidate frames within this basin are then ranked according to their distance from the minimum-energy reference point. Approximately 500 frames are selected at equal intervals from the ranked candidates.
 
----
+________________________________________
 
-# 1. Establish a Literature- and Structure-Based Virtual Framework
+## 1. Establish a Literature- and Structure-Based Virtual Framework
 
 Before beginning the analysis, collect literature related to the protein, especially information concerning:
 
@@ -150,9 +148,9 @@ Then molecular dynamics simulations generate large numbers of trajectories:
 
 Finally, these pieces of information are assembled to determine how the mutation may alter structural motions.
 
----
+________________________________________
 
-# 2. Obtain 3D Structural Trajectories After the Simulation
+## 2. Obtain 3D Structural Trajectories After the Simulation
 
 Open CMD on the computer where ProDy is installed.
 
@@ -203,9 +201,9 @@ An NMD file will be generated.
 
 Open the file using VMD to visualize the dynamic motion of the 3D structure.
 
----
+________________________________________
 
-# 3. Confirm That the Simulation Exhibits the Expected Features
+## 3. Confirm That the Simulation Exhibits the Expected Features
 
 First, examine whether WT and MT exhibit their expected characteristic features.
 
@@ -224,9 +222,9 @@ If the simulation results do not match the expected behavior, first check and ad
 
 If the expected features are present, proceed to the next stage.
 
----
+________________________________________
 
-# 4. Infer the WT and MT Pathways
+## 4. Infer the WT and MT Pathways
 
 Open two separate VMD sessions and load the WT and MT trajectories.
 
@@ -251,9 +249,9 @@ Play the WT and MT structural trajectories and begin constructing the pathway:
 
 If the observed pathway corresponds with the structural and functional framework established from the literature, proceed to the next step.
 
----
+________________________________________
 
-# 5. Formulate a Mechanistic Hypothesis for the Mutation
+## 5. Formulate a Mechanistic Hypothesis for the Mutation
 
 For example, the following hypothesis can be formulated:
 
@@ -277,9 +275,9 @@ Instead, the goal is to use:
 
 to gradually construct a mechanistic hypothesis that can be further tested.
 
----
+________________________________________
 
-# 6. Identify Key Amino Acids
+## 6. Identify Key Amino Acids
 
 Finally, return to the pathway and identify amino acids that may serve as key nodes.
 
@@ -301,9 +299,9 @@ These can then be further quantified using:
 
 Finally, compare these quantitative results with the pathway established above.
 
----
+________________________________________
 
-# Why Use 500 Trajectories?
+## Why Use 500 Trajectories?
 
 This is also one of the key design considerations of this workflow.
 
