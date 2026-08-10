@@ -11,8 +11,8 @@ ________________________________________
 **Independent Research Driven by Personal Interest**
 * Improving AI Response Precision through Context Engineering
   * [Overview](./06_AI_Workflow_Engineering.md)
-  * [Reproducing AI Behavior Across Independent Chat Sessions](./07_SUME_overview.md)
-
+  * [SUME — Reproducing AI Behavior Across Independent Chat Sessions.](./07_SUME_overview.md)
+  * [SBIP — Building a Stable User Model through interactive initialization.](./13_SBIP_overview.md)
 
 ________________________________________
 ### Molecular Dynamics
