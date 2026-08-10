@@ -32,12 +32,6 @@ ________________________________________
 * [Large-scale Virtual Screening (Chemical Space Navigation Pipeline v1.0)](./05_LargeScale_Virtual_Screening_pipeline_design.md)
   
 ________________________________________
-### AI Workflow Engineering
-* Reproducing AI Behavior Across Independent Chat Sessions 
-* Improving AI Response Precision through Context Engineering 
-* Building a High-Accuracy Knowledge Extraction Workflow Using AI and Whisper
- 
-________________________________________
 ### Data Engineering
 * Reimplementing SAS-based clinical data processing workflows in Python 
 * Reverse-engineering 130 undocumented R scripts 
