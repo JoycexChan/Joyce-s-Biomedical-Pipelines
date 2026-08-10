@@ -33,6 +33,7 @@ ________________________________________
   
 ________________________________________
 ### Data Engineering
+**Applied in Professional Practice**
 * Reimplementing SAS-based clinical data processing workflows in Python 
 * Reverse-engineering 130 undocumented R scripts 
 * Simplifying analytical workflows using the structural characteristics of real-world healthcare datasets 
