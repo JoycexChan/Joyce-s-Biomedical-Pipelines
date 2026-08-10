@@ -6,7 +6,7 @@ ________________________________________
 ________________________________________
 ### AI Workflow Engineering
 **Applied in Professional Practice**
-* Building a High-Accuracy Knowledge Extraction Workflow Using AI and Whisper
+* [Building a High-Accuracy Knowledge Extraction Workflow Using AI and Whisper](./12_Knowledge_Extraction_Workflow_Whisper.md)
   
 **Independent Extension After Employment**
 * Reproducing AI Behavior Across Independent Chat Sessions 
