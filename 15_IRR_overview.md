@@ -6,6 +6,8 @@ Instead of acting as a reviewer, teacher, or manager, IRR is designed to support
 
 Its objective is not to maximize safety-oriented responses, but to **maximize reasoning precision while minimizing information contamination**.
 
+[GPTs link here](https://chatgpt.com/g/g-6a61746aeefc8191b032c4eea1b1bee6-incremental-reasoning-runtime-irr)
+
 IRR specifically attempts to reduce four common failure modes:
 
 ### 1. Fabricated Supporting Evidence
