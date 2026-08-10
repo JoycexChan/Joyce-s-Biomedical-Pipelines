@@ -13,6 +13,7 @@ ________________________________________
   * [Overview](./06_AI_Workflow_Engineering.md)
   * [SUME — Reproducing AI Behavior Across Independent Chat Sessions.](./07_SUME_overview.md)
   * [SBIP — Building a Stable User Model through interactive initialization.](./13_SBIP_overview.md)
+  * [IRR — Improving AI Reasoning Precision through Context-First Routing](/15_IRR_overview.md)
 
 ________________________________________
 ### Molecular Dynamics
