@@ -17,7 +17,7 @@ ________________________________________
 **Applied in Professional Practice**
 * [Virtual Screening Pipeline](./01_beginner_virtual_screening.md)
   
-**Applied in Professional Practice**
+**Independent Extension After Employment**
 * [Virtual Screening Pipeline (The Upgraded Pipeline)](./02_Upgraded_virtual_screening.md)
 * [Large-scale Virtual Screening (Hardware Recommendations)](./04_LargeScale_Virtual_Screening_hardware_recommendations.md)
 * [Large-scale Virtual Screening (Chemical Space Navigation Pipeline v1.0)](./05_LargeScale_Virtual_Screening_pipeline_design.md)
