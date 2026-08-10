@@ -8,7 +8,7 @@ ________________________________________
 **Applied in Professional Practice**
 * [Building a High-Accuracy Knowledge Extraction Workflow Using AI and Whisper](./12_Knowledge_Extraction_Workflow_Whisper.md)
   
-**Independent Extension After Employment**
+**Independent Research Driven by Personal Interest**
 * Improving AI Response Precision through Context Engineering
   * [Overview](./06_AI_Workflow_Engineering.md)
   * [Reproducing AI Behavior Across Independent Chat Sessions](./07_SUME_overview.md)
