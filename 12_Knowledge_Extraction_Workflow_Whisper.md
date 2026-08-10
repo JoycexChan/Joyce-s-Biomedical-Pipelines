@@ -609,25 +609,6 @@ The lecture emphasizes decentralized data access:
 * Only aggregated results are returned.
 * Raw data is not centralized or downloaded.
 
-### 3. System roles
-
-The transcript and lecture materials can then be reconciled to distinguish:
-
-**RQUEST**
-
-* Cohort discovery
-* Aggregated queries
-* Researcher-facing functions
-
-**INSIGHT**
-
-* Collection management
-* Data ingestion
-* Metadata configuration
-* Data-manager-facing functions
-
-If the lecture materials establish that Link has been integrated into INSIGHT, the transcript can be corrected accordingly. 
-
 This is where AI becomes useful:
 
 > **The AI is not inventing the knowledge.**
@@ -777,5 +758,5 @@ The most important design principle is therefore:
 
 > **Use AI to reduce the amount of human attention required, not to eliminate human control over information.**
 
-This turns a long training video from a one-time viewing experience into a reusable knowledge base.
+This turns a long training video experience into a reusable knowledge base.
 
