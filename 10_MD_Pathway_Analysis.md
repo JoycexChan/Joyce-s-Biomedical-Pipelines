@@ -3,8 +3,7 @@ ________________________________________
 This analysis approach can be used to quickly assess whether molecular dynamics trajectories exhibit the expected **pathway**, as well as whether the trajectories contain structural indicators that differ between conditions.
 
 However, it also has one obvious limitation:
-
-### The user must be able to interpret possible interactions between amino acids from their positions in the 3D structure, and understand what these interactions may mean for structural motions.**
+**The user must be able to interpret possible interactions between amino acids from their positions in the 3D structure, and understand what these interactions may mean for structural motions.**
 
 For graduate students who are just beginning to perform molecular dynamics analysis, this is usually not easy.
 
