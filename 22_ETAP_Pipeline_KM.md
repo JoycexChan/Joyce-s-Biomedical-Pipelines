@@ -2,7 +2,9 @@
 
 ## Overview
 
-**Note: This article includes descriptions of medical data structures and data extraction methods. During the reverse engineering of historical programs, an issue was identified in which cohort files were not consistently fixed, which could affect analysis results. Do not rely on your own memory when defining the study population. Fix the population-level IDs and save them as a CSV file; every analysis should start from this cohort file.**
+**Note1: This article includes descriptions of medical data structures and data extraction methods. During the reverse engineering of historical programs, an issue was identified in which cohort files were not consistently fixed, which could affect analysis results.**
+
+**Note2: Do not rely on your own memory when defining the study population. Fix the population-level IDs and save them as a CSV file; every analysis should start from this cohort file.**
 
 **Fix the cohort first → prepare the phenotype → integrate the data → perform the analysis.**
 
