@@ -1,6 +1,8 @@
 # Joyce-s-Biomedical-Pipelines
 AI workflow engineering, automation pipelines, data engineering, and reproducible computational workflows.
 
+In the AI era, you do not need to read a long article from beginning to end. 
+Start by reading the introduction to understand what problem the article is trying to solve, then give the full text to AI and let AI identify the parts you need.
 ________________________________________
 ## 📚 文章目錄 (Table of Contents)
 ________________________________________
@@ -42,7 +44,7 @@ ________________________________________
   * [How to reverse-engineer 130 undocumented R scripts with no one available to ask](./19_Reverse_Engineer_130_R.md)
   * [Designing an ETAP Pipeline based on the structure of real-world medical data](./20_ETAP_Pipeline_overview.md)
     * [ETAP Pipeline Implementation — Treatment Delay across different cancers × different stages × different COVID time periods](./21_ETAP_Pipeline_TreatmentDelay.md)
-    * [ETAP Pipeline Implementation — Kaplan–Meier Survival Analysis (KM) across different cancers × different stages × different COVID definitions](./ 19_Reverse_Engineer_130_R.md)
+    * [ETAP Pipeline Implementation — Kaplan–Meier Survival Analysis (KM) across different cancers × different stages × different COVID definitions](./22_ETAP_Pipeline_KM.md)
 * OMOP Mapping
   * [Essential Mapping Knowledge and Conceptual Maps for Using an OMOP Review Engine](./16_Basic_Mapping_Knowledge_OMOP.md)
   * [Design and Implementation of an OMOP Review Engine with GPTs](./17_OMOP_Governance_Review.md)
