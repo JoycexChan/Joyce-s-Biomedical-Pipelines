@@ -37,7 +37,12 @@ ________________________________________
 ________________________________________
 ### Data Engineering
 **Applied in Professional Practice**
-* Reimplementing SAS-based clinical data processing workflows in Python 
-* Reverse-engineering 130 undocumented R scripts 
-* Simplifying analytical workflows using the structural characteristics of real-world healthcare datasets 
-* Building an AI-assisted mapping collaboration framework to reduce manual review effort in large-scale OMOP projects
+* Python Implementation
+  * How to translate the SAS workflow in a SAS user's mind into Python code
+  * How to reverse-engineer 130 undocumented R scripts with no one available to ask
+  * Designing an ETAP Pipeline based on the structure of real-world medical data
+    * ETAP Pipeline Implementation — Treatment Delay across different cancers × different stages × different COVID time periods
+    * ETAP Pipeline Implementation — Kaplan–Meier Survival Analysis (KM) across different cancers × different stages × different COVID definitions
+* OMOP Mapping
+  * Essential Mapping Knowledge and Conceptual Maps for Using an OMOP Review Engine
+  * Design and Implementation of an OMOP Review Engine with GPTs
