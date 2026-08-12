@@ -44,5 +44,5 @@ ________________________________________
     * ETAP Pipeline Implementation — Treatment Delay across different cancers × different stages × different COVID time periods
     * ETAP Pipeline Implementation — Kaplan–Meier Survival Analysis (KM) across different cancers × different stages × different COVID definitions
 * OMOP Mapping
-  * Essential Mapping Knowledge and Conceptual Maps for Using an OMOP Review Engine
-  * Design and Implementation of an OMOP Review Engine with GPTs
+  * [Essential Mapping Knowledge and Conceptual Maps for Using an OMOP Review Engine](./16_Basic_Mapping_Knowledge_OMOP.md)
+  * [Design and Implementation of an OMOP Review Engine with GPTs](./17_OMOP_Governance_Review.md)
