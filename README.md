@@ -10,6 +10,9 @@ ________________________________________
 ### AI Workflow Engineering
 **Applied in Professional Practice**
 * [Building a High-Accuracy Knowledge Extraction Workflow Using AI and Whisper](./12_Knowledge_Extraction_Workflow_Whisper.md)
+* OMOP Mapping
+  * [Essential Mapping Knowledge and Conceptual Maps for Using an OMOP Review Engine](./16_Basic_Mapping_Knowledge_OMOP.md)
+  * [Design and Implementation of an OMOP Review Engine with GPTs](./17_OMOP_Governance_Review.md)
   
 **Independent Research Driven by Personal Interest**
 * Context Engineering for Long-Term AI Collaboration
@@ -46,6 +49,4 @@ ________________________________________
   * [Designing an ETAP Pipeline based on the structure of real-world medical data](./20_ETAP_Pipeline_overview.md)
     * [ETAP Pipeline Implementation — Treatment Delay across different cancers × different stages × different COVID time periods](./21_ETAP_Pipeline_TreatmentDelay.md)
     * [ETAP Pipeline Implementation — Kaplan–Meier Survival Analysis (KM) across different cancers × different stages × different COVID definitions](./22_ETAP_Pipeline_KM.md)
-* OMOP Mapping
-  * [Essential Mapping Knowledge and Conceptual Maps for Using an OMOP Review Engine](./16_Basic_Mapping_Knowledge_OMOP.md)
-  * [Design and Implementation of an OMOP Review Engine with GPTs](./17_OMOP_Governance_Review.md)
+
