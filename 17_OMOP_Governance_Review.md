@@ -34,9 +34,7 @@ This GPT includes:
 You can directly provide your data and start the review.
 
 **GPT:**
-👉 `[OMOP Governance Review (template)]`
-
-> Replace the placeholder above with the actual GPT sharing link.
+👉 [OMOP Governance Review (template)](https://chatgpt.com/g/g-6a7cba37dcf881919a1d494cd3208b15-omop-governance-review-template)
 
 ---
 
@@ -61,10 +59,10 @@ An **OMOP review reasoning model** is also provided.
 
 If you want the GPT to follow this reasoning approach, you can upload the model together with your own specifications.
 
-**GPT:**
-👉 `[OMOP Governance Review (use your data)]`
+* For example: **My OMOP Governance working model**
 
-> Replace the placeholder above with the actual GPT sharing link.
+**GPT:**
+👉 [OMOP Governance Review (use your data)](https://chatgpt.com/g/g-6a7cca9129d88191b927a9b2fc7474a6-omop-governance-review-use-your-data)
 
 ---
 
