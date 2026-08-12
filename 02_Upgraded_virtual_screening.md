@@ -1,4 +1,4 @@
-# A $170k (NT$5.4M) Virtual Screening Pipeline (The Upgraded Pipeline)
+# Virtual Screening Pipeline (The Upgraded Pipeline)
 ________________________________________
 
 ## My Basic View of LLMs
