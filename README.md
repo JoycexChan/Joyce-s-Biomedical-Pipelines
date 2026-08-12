@@ -9,10 +9,10 @@ ________________________________________
 ________________________________________
 ### AI Workflow Engineering
 **Applied in Professional Practice**
-* [Building a High-Accuracy Knowledge Extraction Workflow Using AI and Whisper](./12_Knowledge_Extraction_Workflow_Whisper.md)
 * OMOP Mapping
   * [Essential Mapping Knowledge and Conceptual Maps for Using an OMOP Review Engine](./16_Basic_Mapping_Knowledge_OMOP.md)
   * [Design and Implementation of an OMOP Review Engine with GPTs](./17_OMOP_Governance_Review.md)
+* [Building a High-Accuracy Knowledge Extraction Workflow Using AI and Whisper](./12_Knowledge_Extraction_Workflow_Whisper.md)
   
 **Independent Research Driven by Personal Interest**
 * Context Engineering for Long-Term AI Collaboration
