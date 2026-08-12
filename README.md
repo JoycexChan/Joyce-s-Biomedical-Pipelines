@@ -20,6 +20,9 @@ ________________________________________
   * [SUME — Reproducing AI Behavior Across Independent Chat Sessions.](./07_SUME_overview.md)
   * [SBIP — Building a Stable User Model through interactive initialization.](./13_SBIP_overview.md)
   * [IRR — Improving AI Reasoning Precision through Context-First Routing](/15_IRR_overview.md)
+* GEM
+  * [Cat-to-Human Translation Master]
+   * Upload a ~10-second video and receive three layers of interpretation: L1: Cat OS; L2: What the cat is doing and why; L3: Cat behavior modeling and recommended actions.
 
 ________________________________________
 ### Molecular Dynamics
