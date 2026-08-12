@@ -13,6 +13,9 @@ The architecture map does not need to be memorized.
 
 It should be **kept as a reference and checked continuously during Mapping**. With experience, the structure will become familiar.
 
+<img src="images/OMOP_CDM_53.png" width="900">
+<img src="images/OMOP_CDM_53_Oncology_Extension.png" width="900">
+
 The basic structure is:
 
 > **One Patient → Visit → Clinical Event**
