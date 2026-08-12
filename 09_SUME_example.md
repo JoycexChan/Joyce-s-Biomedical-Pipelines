@@ -1,271 +1,330 @@
-# Stable User Model (Current Best Working Model)
+# Stable User Model (Boot Report)
 
----
+## I. Capability Model
 
-## 1. Capability Model
+### Domain Capability
 
-The user is an experienced data architect and governance reviewer working on a Taiwan National Health Insurance (NHI) to OMOP CDM ETL project, with additional responsibility for National Cancer Registry (NBCT/TS) semantic governance.
+The user has strong domain knowledge, particularly in:
 
-Primary capabilities include:
-
-* OMOP CDM v5.3 semantic modeling.
-* ETL architecture and documentation.
-* Clinical terminology governance.
-* Reviewing field-level mappings.
-* Evaluating source semantics independently from implementation.
-* Designing governance recommendations suitable for review board documentation.
+* OMOP CDM / OHDSI
+* Oncology Extension
+* Cancer Registry (CRLF)
+* Taiwan NHI ETL
+* Data Governance
+* Concept Modeling
+* Vocabulary Design
 
 The user is capable of:
 
-* Reading OMOP specifications directly.
-* Distinguishing semantic issues from engineering implementation.
-* Discussing Oncology Extension vs OMOP v5.3.
-* Improving ETL documentation quality and readability.
-* Detecting inconsistencies between source semantics and target modeling.
-
-The user frequently asks for governance review rather than implementation advice.
+* Inferring a Conceptual Model from data definitions
+* Distinguishing Source Semantics from ETL Semantics
+* Distinguishing Implementation from Governance
+* Establishing reusable Mapping Rules
 
 ---
 
-## 2. Decision Model
+### Working Style
 
-The user's decision hierarchy is consistently:
+The user tends to approach problems from an **Architecture Review** perspective rather than a pure programming perspective.
 
-> **Source Semantic**
->
-> ↓
->
-> **OMOP Semantic Compatibility**
->
-> ↓
->
-> **Engineering Feasibility**
->
-> ↓
->
-> **Implementation Simplicity**
+The preferred reasoning flow is:
 
-Important characteristics:
+```text
+Source Meaning
+      ↓
+Conceptual Modeling
+      ↓
+Governance Decision
+      ↓
+Technical Mapping
+```
 
-* Never change source semantics merely to fit OMOP.
-* Governance is independent from ETL.
-* ETL constraints should not redefine source meaning.
-* Preserve original source meaning whenever possible.
-* Prefer explaining trade-offs instead of forcing one solution.
-
-When multiple mappings are acceptable, the user prefers documenting:
-
-* acceptable
-* recommended
-* future recommendation
-
-instead of declaring one mapping "correct."
+rather than starting directly with SQL or ETL implementation details.
 
 ---
 
-## 3. Reasoning Model
+# II. Decision Model
 
-The user's reasoning style is semantic-first and incremental.
+The user's decisions are primarily based on the following principles.
 
-Typical reasoning pattern:
+### 1. Semantic First
 
-1. Understand source definition.
-2. Determine true clinical meaning.
-3. Compare with OMOP semantic domain.
-4. Compare with Oncology Extension (if applicable).
-5. Evaluate implementation.
-6. Produce governance recommendation.
-7. Assign Review Status:
+First determine:
 
-   * 🟢 GREEN
-   * 🟡 YELLOW
-   * 🔴 RED
+> **What does the Source actually represent?**
 
-The user strongly prefers:
+rather than:
 
-* explanation before conclusion
-* semantic justification
-* governance rationale
-* explicit assumptions
-
-The user dislikes:
-
-* unsupported assertions
-* implementation-first reasoning
-* unnecessary complexity
-* overfitting mappings to the CDM
+> **Which field can it be placed into?**
 
 ---
 
-## 4. Preference Model (Collaboration Preferences)
+### 2. Governance Before Implementation
 
-The user prefers collaborative discussion rather than authoritative answers.
+A Mapping should first conform to:
 
-Preferred interaction style:
+* OMOP Semantics
+* Oncology Extension Semantics
+* Domain Boundaries
 
-* Explain reasoning.
-* Identify trade-offs.
-* Highlight semantic risks.
-* Suggest improvements rather than rewrite everything.
-* Preserve previous design decisions unless evidence changes.
-
-The user appreciates:
-
-* concise but technically rigorous explanations.
-* governance-oriented wording suitable for documentation.
-* distinguishing between:
-
-  * OMOP CDM v5.3
-  * Oncology Extension
-  * ETL implementation
-  * Source preservation
-
-For ETL documentation, the user values:
-
-* readability
-* reviewer friendliness
-* architectural clarity
-
-The user often iterates diagrams and documentation through multiple refinements.
+Only then should ETL implementation be considered.
 
 ---
 
-## 5. Shared Vocabulary
+### 3. Minimize ETL Assumptions
 
-Frequently used shared terminology:
+The preferred approach is to:
 
-* Governance
-* Semantic-first
-* Source Semantic
-* Source Preservation
-* ETL
-* Mapping
-* Vocabulary Mapping
-* Standard Concept
-* Source Concept
-* Oncology Extension
-* Cancer Modifier
-* Measurement
+* Preserve Source information
+* Avoid creating Clinical Facts that do not exist in the Source
+* Avoid turning ETL assumptions into Clinical Data
+
+---
+
+### 4. Local Concept Over Incorrect Mapping
+
+When an appropriate Standard Concept is unavailable:
+
+* Create a Local Vocabulary
+* Preserve Source Semantics
+
+rather than forcing an incorrect Mapping.
+
+---
+
+# III. Reasoning Model
+
+The primary reasoning workflow is:
+
+```text
+Source Definition
+        │
+        ▼
+Semantic Analysis
+        │
+        ▼
+Determine Clinical Meaning
+        │
+        ▼
+Determine OMOP Domain
+        │
+        ▼
+Governance Validation
+        │
+        ▼
+Technical Mapping
+```
+
+### Core Principle
+
+> **Clinical Meaning > Field Availability**
+
+For example:
+
+The existence of a modifier field in a Procedure-related structure does not mean that any arbitrary field should be placed into that modifier.
+
+---
+
+## Domain Boundary
+
+The user frequently determines the appropriate semantic boundary first:
+
 * Observation
+* Measurement
 * Procedure
-* Drug Exposure
-* Device Exposure
-* Body Site
-* Route
-* Laterality
-* Stage Group
-* Stage Descriptor
-* AJCC
-* TNM
-* CRLF Vocabulary
-* Athena
-* Review Board
-* Review Status
-* 🟢 GREEN
-* 🟡 YELLOW
-* 🔴 RED
+* Episode
+* Condition
 
-Frequently discussed source datasets:
-
-* TS (Taiwan Cancer Registry)
-* TOTFAO1/2
-* TOTFAE
-
-Common ETL documentation sections:
-
-* ETL Overview
-* Record Pattern
-* Field Mapping
-
-Arrow conventions established for diagrams:
-
-* Black → source value
-* Blue → vocabulary mapping
-* Orange → indirect/reference relationship
+Only then is the Mapping selected.
 
 ---
 
-## 6. Critical Constraints (High Priority)
+## Oncology Extension as a Higher-level Prior
 
-The following constraints consistently influence responses:
+When the Oncology Extension provides a more appropriate conceptual model:
 
-### Semantic Preservation
-
-Never sacrifice source semantics simply to match OMOP structure.
+> **Prefer the Oncology Extension model.**
 
 ---
 
-### Governance Independence
+# IV. Preference Model
 
-Governance review must remain independent from ETL implementation.
+### 1. Reviewer Mode
 
----
+The preferred response format is:
 
-### Distinguish Standards
+* GREEN
+* YELLOW
+* RED
 
-Clearly separate:
+with:
 
-* OMOP CDM v5.3 recommendations
-* Oncology Extension recommendations
-* Engineering implementation choices
-
----
-
-### Review Output Structure
-
-Governance reviews should generally include:
-
-1. Source Semantic
-2. OMOP CDM assessment
-3. Oncology Extension assessment
-4. Field-level evaluation
-5. Governance recommendation
-6. Final review table
-7. Review Status
+* Review Comment
+* Governance Rationale
+* Recommendation
 
 ---
 
-### ETL Documentation
+### 2. Concept-first
 
-When reviewing ETL documentation:
+The user prefers understanding:
 
-* Prefer architectural clarity over exhaustive field wiring.
-* Distinguish:
+> **Why should this be mapped this way?**
 
-  * source mappings
-  * vocabulary mappings
-  * ETL-generated values
-  * reference relationships
-* Avoid diagrams that become visually overloaded ("spider web" effect).
-* Recommend separating overview diagrams from detailed field mappings when complexity increases.
+rather than only:
+
+> **How should this be mapped?**
 
 ---
 
-### Practical Modeling Philosophy
+### 3. Consistency
 
-When multiple valid implementations exist:
+All Reviews should apply consistent Governance Rules.
 
-* Prefer preserving information.
-* Accept pragmatic ETL solutions when no appropriate OMOP field exists (e.g., retaining non-standard source information in `sig` rather than creating low-value `OBSERVATION` records), provided the semantic limitation is explicitly documented.
+For example:
+
+* Classification → Observation / Measurement (Oncology Extension)
+* Reason → Observation
+* Status → Observation
+* Treatment Attribute → Measurement (Oncology Extension)
 
 ---
 
-## 7. Next Session Protocol
+### 4. Reusable Rules
 
-**Next Window Instructions:**
+The user prefers building:
 
-Do **NOT** re-initialize.
+> **Reusable Governance Rules**
 
-**Recommended Workflow:**
+so that future Reviews do not need to derive the same reasoning from scratch.
+
+---
+
+# V. Shared Vocabulary
+
+The following terminology has been established as shared vocabulary.
+
+## Governance
+
+* GREEN
+* YELLOW
+* RED
+
+## Semantic
+
+* Treatment Attribute
+* Clinical Attribute
+* Classification
+* Modifier
+* Bitmask
+* Local Concept
+* Proxy Date
+* Semantic Boundary
+
+## Oncology
+
+* Radiotherapy Course
+* Episode
+* Episode Event
+* Treatment Attribute
+* Radiation Target Volume
+* Radiation Modality
+
+## ETL
+
+* Preserve Source
+* Local Vocabulary
+* FACT_RELATIONSHIP
+* Source Semantics
+* ETL Assumption
+
+---
+
+# VI. Important Constraints
+
+### 1.
+
+Do not map a field simply because the CDM has a place where it could be stored.
+
+Always confirm the semantics first.
+
+---
+
+### 2.
+
+Do not turn:
+
+```text
+ETL Assumption
+```
+
+into:
+
+```text
+Clinical Fact
+```
+
+---
+
+### 3.
+
+Prioritize:
+
+> **Source Meaning**
+
+rather than field completeness.
+
+---
+
+### 4.
+
+For Oncology Mapping:
+
+Prioritize consistency with the Oncology Extension.
+
+If constrained by CDM v5.3, explicitly disclose the limitation.
+
+---
+
+### 5.
+
+Reviews should focus on:
+
+> **Governance**
+
+rather than Coding Style.
+
+---
+
+# VII. Continuation Model
+
+### Next Window
+
+Do not perform a complete re-initialization.
+
+Recommended workflow:
 
 1. Load this Boot Report.
-2. Enter Validation Mode immediately.
-3. Validate whether current reasoning still matches the user's semantic-first governance model.
-4. If validation succeeds, continue using the established Shared Brain model directly.
-5. If discrepancies are found, perform **Local Updates only**; do **not** rebuild the full model.
+2. Enter Validation Mode directly.
+3. If the model successfully predicts the user's reasoning style, maintain Shared Brain Sync.
+4. If it fails, update only the failed portion rather than rebuilding the entire model.
 
-**Objective:**
+### Goal
 
-Maintain **Shared Brain Synchronization**, not a fresh Boot.
+> **Shared Brain Synchronization Update**
 
-This Boot Report represents the **current best working model**, serving as the default reasoning prior for subsequent sessions. If future conversations provide stronger evidence, update only the affected sections while preserving stable reasoning patterns.
+rather than a complete re-boot.
+
+The Boot Report is not intended to restrict GPT. It provides a persistent reasoning prior that can be carried across conversation windows.
+
+The Boot Report represents the:
+
+> **Current Best Working Model**
+
+and serves as the default prior for the next window rather than as permanent truth.
+
+If new evidence conflicts with the model, prioritize:
+
+> **Local Update**
+
+rather than preserving global consistency.
