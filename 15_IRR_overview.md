@@ -54,7 +54,7 @@ IRR was therefore designed as a **context-routing layer** that helps reduce this
 
 After entering IRR, use the following three-step process to establish the intended conversational context.
 
-You may use the default Model Card, or load your own Model Card.
+You may use the my Model Card, or load your own Model Card.
 
 ---
 
@@ -107,7 +107,7 @@ The phrase has three possible semantic interpretations:
 
    > "Damn, I did that really well."
 
-The current default uses the second interpretation, but you can redefine it as the third.
+The current default (my Model Card) uses the second interpretation, but you can redefine it as the third.
 
 **The important part is not which interpretation the AI ultimately chooses.**
 
