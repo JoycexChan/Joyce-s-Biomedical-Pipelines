@@ -107,7 +107,7 @@ The phrase has three possible semantic interpretations:
 
    > "Damn, I did that really well."
 
-The current default (my Model Card) uses the second interpretation, but you can redefine it as the third.
+My Model Card uses the second interpretation, but you can redefine it as the third.
 
 **The important part is not which interpretation the AI ultimately chooses.**
 
