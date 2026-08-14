@@ -111,7 +111,7 @@ The current default (my Model Card) uses the second interpretation, but you can 
 
 **The important part is not which interpretation the AI ultimately chooses.**
 
-The purpose of the probe is to determine whether the AI is actually using the **shared definition and shared context**, rather than automatically reverting to its default semantic interpretation.
+The purpose of the probe is to determine whether the AI is actually using the **shared definition and shared context**, rather than automatically reverting to its default semantic interpretation (Absolute / self-aggrandizing interpretation).
 
 ### If you dislike the "I'm a genius" probe
 
