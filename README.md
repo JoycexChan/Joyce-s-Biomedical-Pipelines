@@ -46,10 +46,9 @@ ________________________________________
 ________________________________________
 ### Data Engineering
 **Applied in Professional Practice**
-* Python Implementation
-  * [How to translate the SAS workflow in a SAS user's mind into Python code](./18_SAS_to_Python.md)
-  * [How to reverse-engineer 130 undocumented R scripts with no one available to ask](./19_Reverse_Engineer_130_R.md)
-  * [Designing an ETAP Pipeline based on the structure of real-world medical data](./20_ETAP_Pipeline_overview.md)
-    * [ETAP Pipeline Implementation — Treatment Delay across different cancers × different stages × different COVID time periods](./21_ETAP_Pipeline_TreatmentDelay.md)
-    * [ETAP Pipeline Implementation — Kaplan–Meier Survival Analysis (KM) across different cancers × different stages × different COVID definitions](./22_ETAP_Pipeline_KM.md)
+* [How to translate the SAS workflow in a SAS user's mind into Python code](./18_SAS_to_Python.md)
+* [How to reverse-engineer 130 undocumented R scripts with no one available to ask](./19_Reverse_Engineer_130_R.md)
+* [Designing an ETAP Pipeline based on the structure of real-world medical data](./20_ETAP_Pipeline_overview.md)
+  * [ETAP Pipeline Implementation — Treatment Delay across different cancers × different stages × different COVID time periods](./21_ETAP_Pipeline_TreatmentDelay.md)
+  * [ETAP Pipeline Implementation — Kaplan–Meier Survival Analysis (KM) across different cancers × different stages × different COVID definitions](./22_ETAP_Pipeline_KM.md)
 
