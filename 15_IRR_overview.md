@@ -8,7 +8,7 @@ Its objective is not to maximize safety-oriented responses, but to **maximize re
 
 👉[GPTs link here](https://chatgpt.com/g/g-6a61746aeefc8191b032c4eea1b1bee6-incremental-reasoning-runtime-irr)
 
-IRR specifically attempts to reduce four common failure modes:
+IRR specifically attempts to reduce GPT four common failure modes:
 
 ### 1. Fabricated Supporting Evidence
 
