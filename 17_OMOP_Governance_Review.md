@@ -17,6 +17,10 @@ you can provide them directly to the GPT and ask it to assess:
 
 > **What does this field actually represent? Should it be included in OMOP? If it should, is the current mapping appropriate?**
 
+📖 **Prerequisite / Companion Guide:**  
+Before using the review engine, please review the foundational framework:  
+👉 [Basic Mapping Knowledge Required for AI-Assisted OMOP Mapping Review](./16_Basic_Mapping_Knowledge_OMOP.md)
+
 ---
 
 # Use the GPTs Directly
